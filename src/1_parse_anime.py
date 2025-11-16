@@ -172,6 +172,12 @@ def run_etl_pipeline(
 
 
 def main():
+    """
+    Точка входа для запуска ETL-пайплайна из командной строки.
+
+    Парсит аргументы, валидирует входной файл и запускает
+    функцию run_etl_pipeline с переданными параметрами.
+    """
     ap = argparse.ArgumentParser(
         description="ETL Pipeline для сбора данных об аниме"
     )

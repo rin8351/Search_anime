@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Shikimori anime page parser
-Usage:
-    python shikimori_parser.py https://shikimori.one/animes/5680-k-on -o k_on.json
+Парсер страниц аниме «Шикимори»
+Использование:
 
-What it extracts:
-- Title (from <header> <h1> or meta[itemprop="name"/"headline"])
-- "Информация" block (from div.c-about -> div.b-entry-info -> div.line-container)
-- Rating (tries microdata meta[itemprop="ratingValue"], then visible score near "РЕЙТИНГ")
-- Description (from div.c-description > div.description-current OR div[itemprop="description"])
+python shikimori_parser.py https://shikimori.one/animes/5680-k-on -o k_on.json
+
+Что извлекает:
+- Заголовок (из <header> <h1> или meta[itemprop="name"/"headline"])
+- Блок «Информация» (из div.c-about -> div.b-entry-info -> div.line-container)
+- Рейтинг (использует микроданные meta[itemprop="ratingValue"], затем видимую оценку рядом с «РЕЙТИНГ»)
+- Описание (из div.c-description > div.description-current ИЛИ div[itemprop="description"])
 """
 
 import argparse
@@ -31,12 +32,34 @@ HEADERS = {
 
 
 def fetch_html(url: str) -> str:
+    """
+    Загружает HTML содержимое страницы по указанному URL.
+
+    Args:
+        url: Ссылка на страницу аниме на shikimori.one.
+
+    Returns:
+        Строка с HTML-кодом страницы.
+
+    Raises:
+        requests.HTTPError: В случае неуспешного HTTP-ответа.
+        requests.RequestException: При сетевых ошибках.
+    """
     resp = requests.get(url, headers=HEADERS, timeout=30)
     resp.raise_for_status()
     return resp.text
 
 
 def clean_text(s: str) -> str:
+    """
+    Очищает текст: нормализует пробелы, удаляет неразрывные пробелы.
+
+    Args:
+        s: Исходная строка.
+
+    Returns:
+        Очищенная строка.
+    """
     # normalize spaces, quotes and dashes
     s = s.replace('\xa0', ' ').strip()
     s = re.sub(r'\s+', ' ', s)
@@ -44,6 +67,20 @@ def clean_text(s: str) -> str:
 
 
 def extract_title(soup: BeautifulSoup) -> Optional[str]:
+    """
+    Извлекает заголовок аниме со страницы.
+
+    Пытается последовательно:
+    1) <header> h1
+    2) Микроразметка meta[itemprop="name"/"headline"]
+    3) <title>
+
+    Args:
+        soup: Объект BeautifulSoup для HTML документа.
+
+    Returns:
+        Строка с названием или None, если не найдено.
+    """
     # 1) header h1
     h = soup.select_one("header.head h1, header .head h1, header h1")
     if h:
@@ -67,9 +104,6 @@ def extract_title(soup: BeautifulSoup) -> Optional[str]:
 def extract_info_block(soup: BeautifulSoup) -> Dict[str, str]:
     """
     Parse the left "Информация" block.
-    Structure (as of screenshots):
-      div.c-about > div.cc > div.c-info-left > div.block > div.b-entry-info > div.line-container
-        each line-container contains two or more div.line (name/value pairs)
     """
     info: Dict[str, str] = {}
 
@@ -100,13 +134,23 @@ def extract_info_block(soup: BeautifulSoup) -> Dict[str, str]:
 
 
 def extract_rating(soup: BeautifulSoup) -> Optional[str]:
+    """
+    Извлекает числовой рейтинг аниме.
+
+    Сначала пытается взять из микроразметки ratingValue, затем ищет
+    видимое числовое значение в правом блоке страницы.
+
+    Args:
+        soup: Объект BeautifulSoup для HTML документа.
+
+    Returns:
+        Рейтинг в виде строки (например, "8.12") или None.
+    """
     # Try microdata
     m = soup.select_one('meta[itemprop="ratingValue"]')
     if m and m.get("content"):
         return clean_text(m["content"])
 
-    # Try the visible number near "РЕЙТИНГ"
-    # Look for a floating number with 1–2 decimals inside the right column of c-about
     right = soup.select_one("div.c-about")
     text = ""
     if right:
@@ -122,7 +166,18 @@ def extract_rating(soup: BeautifulSoup) -> Optional[str]:
 
 
 def extract_description(soup: BeautifulSoup) -> Optional[str]:
-    # Primary (per screenshots)
+    """
+    Извлекает описание аниме.
+
+    Пытается получить текст из блока текущего описания или из элемента
+    с itemprop="description". Текст нормализуется.
+
+    Args:
+        soup: Объект BeautifulSoup для HTML документа.
+
+    Returns:
+        Строка с описанием или None.
+    """
     node = soup.select_one("div.c-description div.description-current")
     if node:
         # Description paragraphs may contain <br> and links to characters; keep text only
@@ -130,7 +185,6 @@ def extract_description(soup: BeautifulSoup) -> Optional[str]:
         if desc:
             return desc
 
-    # Microdata fallback
     node = soup.select_one('div[itemprop="description"], [itemprop="description"]')
     if node:
         desc = clean_text(node.get_text(" ", strip=True))
@@ -141,6 +195,23 @@ def extract_description(soup: BeautifulSoup) -> Optional[str]:
 
 
 def parse(url: str) -> Dict[str, Any]:
+    """
+    Парсит страницу аниме и возвращает структурированные данные.
+
+    Args:
+        url: Ссылка на страницу аниме.
+
+    Returns:
+        Словарь формата:
+        {
+          "<Название>": {
+            "url": str,
+            "info": Dict[str, str],
+            "rating": Optional[str],
+            "description": Optional[str]
+          }
+        }
+    """
     html = fetch_html(url)
     soup = BeautifulSoup(html, "lxml")
 
@@ -161,6 +232,14 @@ def parse(url: str) -> Dict[str, Any]:
 
 
 def main():
+    """
+    Точка входа CLI: парсит указанную страницу аниме и выводит JSON.
+
+    Аргументы:
+        url (позиционный): URL страницы аниме на shikimori.one
+        -o / --output: Путь для сохранения результата в файл
+        --ensure-ascii: Экранировать не-ASCII символы в JSON
+    """
     ap = argparse.ArgumentParser(description="Parse a Shikimori anime page into JSON.")
     ap.add_argument("url", help="URL of the anime page on shikimori.one")
     ap.add_argument("-o", "--output", help="Path to save JSON file", default=None)

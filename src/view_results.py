@@ -8,7 +8,7 @@ import json
 from pathlib import Path
 
 
-def load_results(file_path='../data/results/final_anime.json'):
+def load_results(file_path='data/results/final_anime.json'):
     """Загружает результаты из JSON файла"""
     if not Path(file_path).exists():
         print(f"❌ Файл не найден: {file_path}")
@@ -26,38 +26,38 @@ def print_anime_details(title, details, index):
     print(f"{'='*80}")
     
     # Основная информация
-    print(f"⭐ Рейтинг: {details.get('rating', 'N/A')}")
-    print(f"🎬 Эпизоды: {details.get('Эпизоды', 'N/A')}")
-    print(f"👤 Возраст героини: {details.get('approximateage', 'N/A')}")
+    print(f"Рейтинг: {details.get('rating', 'N/A')}")
+    print(f"Эпизоды: {details.get('Эпизоды', 'N/A')}")
+    print(f"Возраст героини: {details.get('approximateage', 'N/A')}")
     
     # Жанры и темы
     genres = details.get('Жанры', details.get('Жанр', 'N/A'))
     themes = details.get('Темы', details.get('Тема', 'N/A'))
     
-    print(f"\n📚 Жанры: {genres}")
-    print(f"🎭 Темы: {themes}")
+    print(f"\nЖанры: {genres}")
+    print(f"Темы: {themes}")
     
     # Возрастной рейтинг
     rating_age = details.get('Рейтинг', 'N/A')
-    print(f"🔞 Возрастной рейтинг: {rating_age}")
+    print(f"Возрастной рейтинг: {rating_age}")
     
     # AI-анализ
-    print(f"\n🤖 AI-анализ:")
-    print(f"   Главная роль: {'👩 Женщина' if details.get('hero') == 'female' else details.get('hero', 'N/A')}")
+    print(f"\nAI-анализ:")
+    print(f"   Главная роль: {'Женщина' if details.get('hero') == 'female' else details.get('hero', 'N/A')}")
     print(f"   Насилие: {'✅ Нет' if details.get('violence') == 'нет' else '❌ Да'}")
     print(f"   Мистика: {'✅ Нет' if details.get('mystical') == 'нет' else '❌ Да'}")
     print(f"   Фокус на романтике: {'💕 Да' if details.get('love_vibes') == 'да' else '❌ Нет'}")
     
     # Описание
     description = details.get('description', 'Нет описания')
-    print(f"\n📝 Описание:")
+    print(f"\nОписание:")
     print(f"   {description}")
 
 
 def print_summary(anime_data):
     """Выводит краткую сводку"""
     print("\n" + "="*80)
-    print("📊 СТАТИСТИКА")
+    print("СТАТИСТИКА")
     print("="*80)
     
     total = len(anime_data)
@@ -85,15 +85,15 @@ def print_summary(anime_data):
         reverse=True
     )
     
-    print(f"\n🏆 ТОП-3 по рейтингу:")
+    print(f"\nТОП-3 по рейтингу:")
     for i, (title, details) in enumerate(sorted_anime[:3], 1):
-        print(f"   {i}. {title} (⭐ {details['rating']})")
+        print(f"   {i}. {title} ({details['rating']})")
 
 
 def main():
     """Основная функция"""
     print("\n" + "="*80)
-    print("🎬 РЕЗУЛЬТАТЫ АНАЛИЗА АНИМЕ")
+    print(" РЕЗУЛЬТАТЫ АНАЛИЗА АНИМЕ")
     print("="*80)
     
     # Загрузка данных
@@ -131,7 +131,7 @@ def main():
             for i, (title, details) in enumerate(anime_data.items(), 1):
                 rating = details.get('rating', 'N/A')
                 episodes = details.get('Эпизоды', 'N/A')
-                print(f"{i}. {title} (⭐ {rating}, 🎬 {episodes} эп.)")
+                print(f"{i}. {title} ({rating}, {episodes} эп.)")
         
         elif choice == '3':
             # Выбор конкретного аниме
@@ -142,23 +142,23 @@ def main():
                     title, details = list(anime_data.items())[num - 1]
                     print_anime_details(title, details, num)
                 else:
-                    print("❌ Неверный номер!")
+                    print(" Неверный номер!")
             except ValueError:
-                print("❌ Введите число!")
+                print("Введите число!")
         
         elif choice == '4':
-            print("\n✨ Спасибо за использование! Приятного просмотра!")
+            print("\n Спасибо за использование! Приятного просмотра!")
             break
         
         else:
-            print("❌ Неверный выбор! Попробуйте снова.")
+            print("Неверный выбор! Попробуйте снова.")
 
 
 if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
-        print("\n\n✨ Программа прервана. До свидания!")
+        print("\n\n Программа прервана. До свидания!")
     except Exception as e:
-        print(f"\n❌ Произошла ошибка: {e}")
+        print(f"\nПроизошла ошибка: {e}")
 
