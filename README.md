@@ -1,4 +1,4 @@
-# 🎬 Anime Finder: Finding the Perfect Anime with AI
+# Anime Finder: Finding the Perfect Anime with AI
 
 > Automated pipeline for filtering anime by specific criteria using AI
 
@@ -19,7 +19,7 @@ Almost every anime on the site has: genre, theme, description. Filtering was don
 - Events take place in the **real world** (no magic/mysticism)
 - No elements of **violence and cruelty**
 
-### ❓ Why is this project needed?
+###  Why is this project needed?
 
 A simple search by the "Romance" genre on the site didn't yield the desired results for two reasons:
 1. **The "Romance" genre is often secondary.** Even if it's listed, the main plot may be built around sports, studies, work, or hobbies of the characters, with romance as a background. I needed **romance as the basis of the plot**.
@@ -36,7 +36,7 @@ Therefore, a pipeline with AI analysis of descriptions was created for accurate 
 
 ---
 
-## 📝 Note on AI Prompt Language
+## Note on AI Prompt Language
 
 **Important:** The AI prompt used in this project (in `src/4_analyze_with_ai.py`) is currently written in **Russian**, as this is the language the project was originally used in. The prompt analyzes anime descriptions in Russian. If you want to use this project with English descriptions or prompts, you may need to translate the prompt accordingly.
 
@@ -59,7 +59,7 @@ Search_anime/
 │   ├── raw/                         # Raw data
 │   ├── processed/                   # Intermediate results
 │   └── results/                     # Final results
-│       └── final_anime.json         # 🎯 12 anime
+│       └── final_anime.json         #  12 anime
 │
 ├── README.md                         # English version
 ├── README_RU.md                      # Russian version
@@ -141,7 +141,7 @@ python view_results.py
 
 ---
 
-## 🛠️ Technologies
+##  Technologies
 
 - **Python 3.8+** — programming language
 - **Beautiful Soup 4** — HTML parsing
@@ -151,7 +151,7 @@ python view_results.py
 
 ---
 
-## 💰 Cost
+##  Cost
 
 When using OpenAI GPT-4o-mini:
 - **117 anime** (final filtering): ~$0.10-0.20
@@ -162,7 +162,7 @@ When using OpenAI GPT-4o-mini:
 
 ---
 
-## ⚙️ Requirements
+## Requirements
 
 - Python 3.8 or higher
 - OpenAI API key (for AI analysis)
@@ -170,7 +170,7 @@ When using OpenAI GPT-4o-mini:
 
 ---
 
-## 🔐 Security
+##  Security
 
 ⚠️ **Important:** The `.env` file with the API key is already added to `.gitignore` and will not be uploaded to Git.
 
@@ -182,7 +182,7 @@ When using OpenAI GPT-4o-mini:
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Installation
 
@@ -230,17 +230,15 @@ python view_results.py
 
 ---
 
-## 📝 License
+## License
 
 MIT License — feel free to use!
 
 ---
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - [Shikimori.one](https://shikimori.one) — anime database
 - [OpenAI](https://openai.com) — API for text analysis
 
 ---
-
-**⭐ If the project was useful — give it a star on GitHub!**
