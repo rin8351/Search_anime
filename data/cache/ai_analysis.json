@@ -1,6 +1,13 @@
 {
   "Твоя апрельская ложь / Shigatsu wa Kimi no Uso": {
     "description_hash": "093ae7c7ba9ddf334f0da715b56c1de77689f189b87cc921dfda38dfd4db07d9",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
     "hero": "male",
     "violence": "нет",
     "mystical": "нет",
@@ -9,6 +16,13 @@
   },
   "Нана / Nana": {
     "description_hash": "b29370e663818ccb4796296aed97c9d36680455a83219bfc3840b8c4d289d639",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
     "hero": "female",
     "violence": "нет",
     "mystical": "нет",
@@ -17,6 +31,13 @@
   },
   "Роза Версаля / Versailles no Bara": {
     "description_hash": "6bdc0b1f9b085d71a302dbdf08e9ca42c937207350be77cf889d9eff68999aad",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
     "hero": "female",
     "violence": "да",
     "mystical": "нет",
@@ -25,6 +46,13 @@
   },
   "Добро пожаловать в NHK / NHK ni Youkoso!": {
     "description_hash": "2c7764563e9f65824e54c53681d56d244afc7ce717acf087aca27c0d57d272a4",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
     "hero": "male",
     "violence": "нет",
     "mystical": "нет",
@@ -33,6 +61,13 @@
   },
   "Истории мечей / Katanagatari": {
     "description_hash": "3d18f16f39a425c45396e93cba251a3199bae8b7bb8383b3627813b42be95b31",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
     "hero": "male",
     "violence": "да",
     "mystical": "нет",
@@ -41,30 +76,58 @@
   },
   "Бродяга Кэнсин / Rurouni Kenshin: Meiji Kenkaku Romantan": {
     "description_hash": "cf63e9a9f95e1f71e9254c6630917fab08e3957f1a2073916ae1d8e21d3aeaba",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
     "hero": "male",
     "violence": "да",
     "mystical": "нет",
     "love_vibes": "нет",
-    "approximateage": "20-30"
+    "approximateage": "30-35"
   },
   "Доходный дом Иккоку / Maison Ikkoku": {
     "description_hash": "bcdf5a1c4b8888a29d170244cc264d62b218e76ae2e6b25a48b617cadc4b05b2",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
     "hero": "male",
     "violence": "нет",
     "mystical": "нет",
     "love_vibes": "да",
-    "approximateage": "18-25"
+    "approximateage": "20-30"
   },
   "Бакуман / Bakuman.": {
     "description_hash": "3eadc98213c8cee50783fc1ff08d7726ce2c6bd7c020ba800a8fc8af64dccac4",
-    "hero": "male",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "unknown",
     "violence": "нет",
     "mystical": "нет",
     "love_vibes": "да",
-    "approximateage": "15-16"
+    "approximateage": "14-15"
   },
   "Не сдавайся! / Skip Beat!": {
     "description_hash": "ba61025fa4675be55cbc5255f90710f58afc965ef165d73393f6522516d79b36",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
     "hero": "female",
     "violence": "нет",
     "mystical": "нет",
@@ -73,6 +136,13 @@
   },
   "Детская игрушка / Kodomo no Omocha (TV)": {
     "description_hash": "4f99ead2b1336a13892c73f249aeb99694b18664341e71cf1cd768965fd8771d",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
     "hero": "female",
     "violence": "нет",
     "mystical": "нет",
@@ -89,6 +159,13 @@
   },
   "Работа!! 3 / Working!!!": {
     "description_hash": "ae45bc08f3c43c93d860196e1166b1d36950b56f28cd96da972ae97eff81b587",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
     "hero": "male",
     "violence": "да",
     "mystical": "нет",
@@ -97,6 +174,13 @@
   },
   "Так сложно любить отаку / Wotaku ni Koi wa Muzukashii": {
     "description_hash": "e16995b0eeacacec8bdde9e8171258224386b6e3ee08a55d10fc68fc9b89233c",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
     "hero": "unknown",
     "violence": "нет",
     "mystical": "нет",
@@ -105,6 +189,13 @@
   },
   "Моя история! / Ore Monogatari!!": {
     "description_hash": "764d6d85fec4a52d4c5ba5867154a15c20c578ca42baae9f1d1b612eeb900581",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
     "hero": "male",
     "violence": "нет",
     "mystical": "нет",
@@ -113,6 +204,13 @@
   },
   "Волшебник Кайто 1412 / Magic Kaito 1412": {
     "description_hash": "bdc7dcb73a819a63312de3b221849029029507117152c4f8cc42d9073b0aad07",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
     "hero": "male",
     "violence": "нет",
     "mystical": "да",
@@ -129,6 +227,13 @@
   },
   "Унеси меня на Луну / Tonikaku Kawaii": {
     "description_hash": "703d5fa1701173e1a7011d19f240d4ff980934c66f50aafc10505c02171cb477",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
     "hero": "male",
     "violence": "нет",
     "mystical": "нет",
@@ -137,6 +242,13 @@
   },
   "Работа!! 2 / Working'!!": {
     "description_hash": "c07f101ac53947d334eac2f660dd7735595b7c45c12106a8acc57653986348b4",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
     "hero": "male",
     "violence": "нет",
     "mystical": "нет",
@@ -145,6 +257,13 @@
   },
   "Сказка о девушке эпохи Тайсё / Taishou Otome Otogibanashi": {
     "description_hash": "cd890ffdd4bce1efb9529479b1b8707c1e3a60e02614de3bff7befa36801a65c",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
     "hero": "male",
     "violence": "нет",
     "mystical": "нет",
@@ -153,6 +272,13 @@
   },
   "Красноволосая принцесса Белоснежка / Akagami no Shirayuki-hime": {
     "description_hash": "d7afe06c1336c5ae51aa39556b7c312d7096417222717d93b4c6b883659677af",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
     "hero": "female",
     "violence": "нет",
     "mystical": "нет",
@@ -161,6 +287,13 @@
   },
   "Золотая пора / Golden Time": {
     "description_hash": "846e526193e6514352cbfcba9d72368440fcee781172576670921dc088ec9930",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
     "hero": "male",
     "violence": "нет",
     "mystical": "нет",
@@ -169,6 +302,13 @@
   },
   "Рай Грисайи / Grisaia no Rakuen": {
     "description_hash": "ef8f923ee6b8c970ac8deffe5177f24ae064f548f9d7a6d090912c42b1e2702e",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
     "hero": "male",
     "violence": "да",
     "mystical": "нет",
@@ -177,6 +317,13 @@
   },
   "Под мостом над Аракавой 2 / Arakawa Under the Bridge x Bridge": {
     "description_hash": "1f2cdfb9b19c814fba9aa288852e84b303668e07e3a8741f331cbe304feb3d7a",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
     "hero": "male",
     "violence": "нет",
     "mystical": "нет",
@@ -185,6 +332,13 @@
   },
   "Цветущая юность / Hanasakeru Seishounen": {
     "description_hash": "4407baef1391f439a62c39f43dc2e4170aa2bff07223c8cc3a0922570a3a25c0",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
     "hero": "female",
     "violence": "нет",
     "mystical": "нет",
@@ -193,6 +347,13 @@
   },
   "Повесть о соседях / Gokinjo Monogatari": {
     "description_hash": "6d297b880ad74efe8cea9301e6c3158fe4fda81de9c45de6047a2be74d9f9692",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
     "hero": "female",
     "violence": "нет",
     "mystical": "нет",
@@ -201,14 +362,28 @@
   },
   "Боевой дворецкий Хаятэ!! / Hayate no Gotoku!!": {
     "description_hash": "e408ebab716d10acc97ece5f151aaa78ce90bd04700f44fce18582114d810672",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
     "hero": "male",
     "violence": "нет",
     "mystical": "нет",
     "love_vibes": "да",
-    "approximateage": "16-18"
+    "approximateage": "16-20"
   },
   "Работа!! / Working!!": {
     "description_hash": "cca2c2d5ad1abfa11b5a8b4f671d7f180ab7ea7c637a02e0376f3b573673f4b6",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
     "hero": "male",
     "violence": "нет",
     "mystical": "нет",
@@ -217,6 +392,13 @@
   },
   "Мы свяжем лодку / Fune wo Amu": {
     "description_hash": "f52b4e1a427749cd7a20836ac7d79c659170177a30653d21909a8d0fab82740e",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
     "hero": "male",
     "violence": "нет",
     "mystical": "нет",
@@ -225,14 +407,28 @@
   },
   "Белый альбом 2 / White Album 2": {
     "description_hash": "0ab1c69f60a2306518f39c5aff7e5a907a4cf7d127588217f0377ca4775f9b12",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
     "hero": "male",
     "violence": "нет",
     "mystical": "нет",
     "love_vibes": "да",
-    "approximateage": "17-20"
+    "approximateage": "18-20"
   },
   "Хроники Валькирии / Senjou no Valkyria": {
     "description_hash": "8a27724edab9f6b927658c647a890afea66384804412dcaf7d71ff30b60b5fd5",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
     "hero": "unknown",
     "violence": "да",
     "mystical": "нет",
@@ -241,6 +437,13 @@
   },
   "Под мостом над Аракавой / Arakawa Under the Bridge": {
     "description_hash": "e376756add66028048a171a144bd0938a8ce8a5037f8f2a24ecd785924f204be",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
     "hero": "male",
     "violence": "нет",
     "mystical": "нет",
@@ -249,6 +452,13 @@
   },
   "Мой сэмпай раздражает! / Senpai ga Uzai Kouhai no Hanashi": {
     "description_hash": "62a5dbf3f34dfba7084311853c4d85801c38c60bb68f88d40b139896464d4538",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
     "hero": "female",
     "violence": "нет",
     "mystical": "нет",
@@ -257,6 +467,13 @@
   },
   "Если бы моя жена стала младшеклассницей / Tsuma, Shougakusei ni Naru.": {
     "description_hash": "768dac268026f7e52e5476a5f27e36fcd71c6eafc9ccc27d5b5fb266bcc48425",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
     "hero": "male",
     "violence": "нет",
     "mystical": "да",
@@ -265,14 +482,28 @@
   },
   "Василиск / Basilisk: Kouga Ninpou Chou": {
     "description_hash": "07761c118c1199e2ddc1aec0fc63b04801c0e53a7b83fc1f9efb659f4b570367",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
     "hero": "unknown",
     "violence": "да",
     "mystical": "нет",
     "love_vibes": "нет",
-    "approximateage": "20-30"
+    "approximateage": "18-30"
   },
   "Полноценная жизнь онлайн / Net-juu no Susume": {
     "description_hash": "01a60fdbf112ce6d30604ea87ce84e7425207ea80289477c8b7af975ab1beb4c",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
     "hero": "female",
     "violence": "нет",
     "mystical": "нет",
@@ -281,6 +512,13 @@
   },
   "Ты умеешь хранить секреты? / Kono Kaisha ni Suki na Hito ga Imasu": {
     "description_hash": "6437814fb4e35d2814c255e6b0c92302d1fe67f5f32fcd3edc90f8704f7fbe6b",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
     "hero": "unknown",
     "violence": "нет",
     "mystical": "нет",
@@ -289,10 +527,2522 @@
   },
   "Боевой дворецкий Хаятэ! / Hayate no Gotoku!": {
     "description_hash": "69815edcce8bf77ce332196298cdb957457e62ac90c1c90222d47eabebdb69bf",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
     "hero": "male",
     "violence": "да",
     "mystical": "нет",
     "love_vibes": "да",
     "approximateage": "16-18"
+  },
+  "Касание / Touch": {
+    "description_hash": "846e93626eba842f2ffcc94071f39a9db1214c6a62fbbc74cb7ee5216f6f1be5",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Перекрёстная игра / Cross Game": {
+    "description_hash": "be4d885e0b36e747a8ca9ae0c439de1e6a041dd0f444d82368953af0e54b53f7",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Озорная Такаги 3 / Karakai Jouzu no Takagi-san 3": {
+    "description_hash": "90dba5ac6f9fdb9d295db41f9bb9f8912792c9681ff5bdc08295d86eb416a5b6",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "14-16"
+  },
+  "Как и ожидалось, моя школьная романтическая жизнь не удалась 3 / Yahari Ore no Seishun Love Comedy wa Machigatteiru. Kan": {
+    "description_hash": "b5d81fa1067bf9fc189e09d01f2818804a81cc9b4417db7221e2c6f6d22a8217",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Как и ожидалось, моя школьная романтическая жизнь не удалась 2 / Yahari Ore no Seishun Love Comedy wa Machigatteiru. Zoku": {
+    "description_hash": "da92939cc4c7674eb3978580234215f1ae96eded2cff65a7ffe44e7a08452423",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Хоримия / Horimiya": {
+    "description_hash": "2cc1e912f2155d9d54333fb43169cd2e131884cfa8396e2f033e48bc4cbe2f74",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "unknown",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Сакура — собирательница карт / Cardcaptor Sakura": {
+    "description_hash": "65c5df480cc14be6b82b9f298ef9a94d63cb419d905486675b4b0440181c672b",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "да",
+    "love_vibes": "нет",
+    "approximateage": "10"
+  },
+  "Голубая шкатулка / Ao no Hako": {
+    "description_hash": "481d970a22cb385efe80495bd4e243772a884aa3f7d5e0c49be17aace09ffbe5",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Маленькие проказники! Ещё раз / Little Busters! Refrain": {
+    "description_hash": "f7f05b761b10c8d0d3941e976a4bab2e3623cc582525ec85fe142cce97556fba",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "unknown",
+    "violence": "нет",
+    "mystical": "да",
+    "love_vibes": "нет",
+    "approximateage": "подростки (примерно 15-18 лет)"
+  },
+  "Клуб свиданий старшей школы Оран / Ouran Koukou Host Club": {
+    "description_hash": "fe15e7948931ce116e87a05c0b59b2d0f85ee32113f3803bfc6558884d707bff",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Эта фарфоровая кукла влюбилась / Sono Bisque Doll wa Koi wo Suru": {
+    "description_hash": "a918727185e5ddf3c29e232f342d590ce19eaccfa837e800c11c82577e1afb7d",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Хоримия: Кусочек / Horimiya: Piece": {
+    "description_hash": "ba568d0b005e436160807c2be28a1e10227f70520e5f759b2f8c515dc9ba60bd",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "unknown",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Слишком много проигравших героинь! / Make Heroine ga Oosugiru!": {
+    "description_hash": "e3c1b23a03726923a74113f4a689e5473ca86c1f5c5f5d458e09f98699c3465b",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "17-18"
+  },
+  "Бессонница после школы / Kimi wa Houkago Insomnia": {
+    "description_hash": "9a5d6159911e7bb916aaa5674419e6eff7eec86cd5f1a5e615ebbbc2d29af53b",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "unknown",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "16-18"
+  },
+  "Кошечка из Сакурасо / Sakura-sou no Pet na Kanojo": {
+    "description_hash": "938d99bf24ca0c74ce5d236d6d4a5ffc866813c94e90210fcb6f0ecd05911a3c",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Торадора! / Toradora!": {
+    "description_hash": "00144938ef95dd768749acb05ca54b5649ff83de922eb5d28fab08e422696e0c",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Прекрасна, как Луна / Tsuki ga Kirei": {
+    "description_hash": "91ddf61e5771bef8cc54a3a0d76599807a2210713e0deeb83c504b060f011f0c",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "unknown",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "15-16"
+  },
+  "Трогательный комплекс / Lovely★Complex": {
+    "description_hash": "a9944d401e2a251a5cb25b5958b3417f880b5558f1a04f09ae29311ca75c15b8",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "unknown",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Озорная Такаги 2 / Karakai Jouzu no Takagi-san 2": {
+    "description_hash": "7a9fe9a3aa4f099e20ab4b8f548fc90864c075e97f30c07dbf63c2c290ea9a1c",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "14-16"
+  },
+  "Достучаться до тебя / Kimi ni Todoke": {
+    "description_hash": "7234191a2df357cd4bba58cd2f9af9ac1d2b3bcf8b2cbb85c2da8e023c9f1aae",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "да",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Пять невест 2 / 5-toubun no Hanayome ∬": {
+    "description_hash": "523dcaa5e9d75a6f35c1d41c9f03e1549a13ac1a25acd682e8ca68c4673a250e",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Как и ожидалось, моя школьная романтическая жизнь не удалась / Yahari Ore no Seishun Love Comedy wa Machigatteiru.": {
+    "description_hash": "994617da7febafa097c50babd658b247b5f4bd772e19012787f42f37f93f5593",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Президент студсовета — горничная! / Kaichou wa Maid-sama!": {
+    "description_hash": "92561f932c34064bd319e9a5308d9f4dd21933bd1648a254702f78a9f0d41de0",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Школьный переполох 2 / School Rumble Ni Gakki": {
+    "description_hash": "48f5ba03766809dc4b312255c4741c29e773e9501a5e46309e32ceb6d18fb630",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Повторная жизнь / ReLIFE": {
+    "description_hash": "f427775ac594213b7ef1ba26f853d1fc9f9920e099dcf02191bf1861be1753e2",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "да",
+    "love_vibes": "нет",
+    "approximateage": "27"
+  },
+  "Красавица-воин Сейлор Мун: Сейлор-звёзды / Bishoujo Senshi Sailor Moon: Sailor Stars": {
+    "description_hash": "23f5544fc8edd301c08b56361acfb5c21fb3ca79d18592a6b1ba25b8e7992953",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "да",
+    "mystical": "да",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Девчонка не промах 2 / High Score Girl II": {
+    "description_hash": "e294cccd3440e22328bf80931245f16bceacdc5c6608663d2f99b819bee0c255",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "unknown",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Красавица-воин Сейлор Мун Эс / Bishoujo Senshi Sailor Moon S": {
+    "description_hash": "9ab971758bcc9295f513fba3a93c95fc5a883c5cfb55b5ae5c99f3c89e8a147d",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "да",
+    "love_vibes": "нет",
+    "approximateage": "16-18"
+  },
+  "Школьный переполох / School Rumble": {
+    "description_hash": "0038a6030794965a43bb4a59efd11b2c9a1aace95f67bc8195f82f1687c61d7a",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Ангел по соседству / Otonari no Tenshi-sama ni Itsunomanika Dame Ningen ni Sareteita Ken": {
+    "description_hash": "09a5ce5ead1f601ea7e90d06c252a03b438de1e854503a0eea718658ea85b9c4",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Псевдогарем / Giji Harem": {
+    "description_hash": "4355e231d3819e1ae0a72f27e585b8642f89ec666fe93e3e25bbea5b913ba23f",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Ежемесячное сёдзё Нодзаки / Gekkan Shoujo Nozaki-kun": {
+    "description_hash": "a38c3339e24621c64f49fd28f818927e006a9f363534c9fc0a6d43c1219939f4",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Красавица-воин Сейлор Мун: Кристалл — Апостолы смерти / Bishoujo Senshi Sailor Moon Crystal Season III": {
+    "description_hash": "6b3277ddcf703503a0c1a780dc6f1c56767618a87f5ff1de5f03c716afbebba7",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "да",
+    "love_vibes": "нет",
+    "approximateage": "15-18"
+  },
+  "Как воспитать героиню из обычной девушки 2 / Saenai Heroine no Sodatekata ♭": {
+    "description_hash": "8f3b2dbfe4e944cd699d36d8b62d661eea09d14c9b783c134fe8b8f98a87b8bc",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "17-20"
+  },
+  "Моя любовь девятьсот девяносто девятого уровня к Ямаде / Yamada-kun to Lv999 no Koi wo Suru": {
+    "description_hash": "902eba0e26f657e5c100358df5bad9b2cb5d40f7a05b1c5775e21da5e929de04",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "18-25"
+  },
+  "Красавица-воин Сейлор Мун / Bishoujo Senshi Sailor Moon": {
+    "description_hash": "725a2133e64074e030e6c50eda9b414c09bb3a82052af9fbcc1508a27442ab38",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "да",
+    "love_vibes": "нет",
+    "approximateage": "14"
+  },
+  "Девчонка не промах / High Score Girl": {
+    "description_hash": "0ad253e8fb237fc639c3b1850781572b86fb124f014cc6056e2d64ad7ca9ba74",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "12"
+  },
+  "Красавица-воин Сейлор Мун Эр / Bishoujo Senshi Sailor Moon R": {
+    "description_hash": "aad789d3572f7c9f2fdc8ddaccb9cf2c6f6b6583bde1ee03885ddfe784e406be",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "да",
+    "mystical": "да",
+    "love_vibes": "нет",
+    "approximateage": "14-16"
+  },
+  "Томо — девушка! / Tomo-chan wa Onnanoko!": {
+    "description_hash": "fac5a5a6b76ef1dcc9c59e723ce990055998f1a162199afb38ccf1ede1ff1f8d",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "да",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Чудачества любви не помеха! / Chuunibyou demo Koi ga Shitai!": {
+    "description_hash": "d469d8e7497b23e9f9cac007f131a5a747dbbdb98b3eacf3221a37683dd85be0",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "да",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Сто девушек, которые очень-очень-очень-очень-очень сильно тебя любят / Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo": {
+    "description_hash": "536a3fe0b0319f3f9497b92ba6d62e7d701cbc4fa74dc3ad8044b1a7e40fdb40",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "да",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Озорная Такаги / Karakai Jouzu no Takagi-san": {
+    "description_hash": "775df46a45410893f33c172c395d6f7d8b3f18e8d244469b65f413978913121d",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "12-15"
+  },
+  "Блудный сын / Hourou Musuko": {
+    "description_hash": "c6f8524e567640953d8614fec34bcfe0851f1c9e3fa758615030206f0b8e46f3",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "unknown",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "подростковый возраст (примерно 12-16 лет)"
+  },
+  "Дурни, тесты, аватары 2 / Baka to Test to Shoukanjuu Ni!": {
+    "description_hash": "42b86477bbbf0e4d039fde3b06356337682e26db84e7d4a8972a8e393090a6bd",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "16-18"
+  },
+  "Сакура — собирательница карт: Прозрачные карты / Cardcaptor Sakura: Clear Card-hen": {
+    "description_hash": "8307da9bbf42661517483b8df42f34dbe32972b8d92d40b340589d7012c316fe",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "да",
+    "love_vibes": "да",
+    "approximateage": "12-14"
+  },
+  "Три сестры Микадоно оказались неожиданно простыми / Mikadono Sanshimai wa Angai, Choroi.": {
+    "description_hash": "a0fa702f3e2f972270330fb189741d7dd18e2dfaa932557814e6bd5bf6621744",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-20"
+  },
+  "Все мы живём в общежитии Кавай / Bokura wa Minna Kawai-sou": {
+    "description_hash": "cd43b855b75fb1c050657e9c0851a73313cac182c984062b652d16e7d200dcb1",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Пять невест / 5-toubun no Hanayome": {
+    "description_hash": "50fce3c96a6baca40c6af429cef65ddd8f70cac51101c7fe2359047beb184113",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Неудержимая юность / Ao Haru Ride": {
+    "description_hash": "a80b673f2def95e52ddeb6a7974b80a217076b54cffbf0fb1de39f07b3100feb",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Красавица-воин Сейлор Мун Супер Эс / Bishoujo Senshi Sailor Moon SuperS": {
+    "description_hash": "3385566cf4bd3553294c9dc4a256ee6544f4f2ff57ea88981f22f4bc3088ddf6",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "да",
+    "love_vibes": "нет",
+    "approximateage": "14-18"
+  },
+  "С его стороны — с её стороны / Kareshi Kanojo no Jijou": {
+    "description_hash": "a941e84aa01d9528b73f38e33e61b0ca45d016120e13527ecc190f31785856ae",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Больше чем пара, меньше чем любовники / Fuufu Ijou, Koibito Miman.": {
+    "description_hash": "d9c4a87187560fbe1778af96ec95564e019457163b9846e91c6cf6d7cd05a536",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Сначала парни — потом цветы / Hana yori Dango": {
+    "description_hash": "db9b015efa804a0d6fabc840f867f35be8c4cdb2e82edb250fb80609a2a039e4",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "17"
+  },
+  "Тада не может влюбиться / Tada-kun wa Koi wo Shinai": {
+    "description_hash": "4d02a444783858a9a0e93f918d212083a9b459456093e33210d61ea407752d00",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "17-18"
+  },
+  "Притворная любовь / Nisekoi": {
+    "description_hash": "e6a110a246ea143b4f37f6feb81a15aef12cc39d4e302707936d977e14be6491",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Аля иногда кокетничает со мной по-русски / Tokidoki Bosotto Russia-go de Dereru Tonari no Alya-san": {
+    "description_hash": "6f34e1257fd864239ae23a4e3087d1130d71ff0ed55610ef402ff704380abc16",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Чудачества любви не помеха! 2 / Chuunibyou demo Koi ga Shitai! Ren": {
+    "description_hash": "56ac9b0fb78c46c22e08d433208c65bc86f472da488ace14537f1348f9d200d7",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "да",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Кубо не прощает меня — моба / Kubo-san wa Mob wo Yurusanai": {
+    "description_hash": "06f1a53770c2043c8302f03e035b55bd31d58b528ee7b9767c66cd5b05a76109",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Волшебница и злой офицер / Katsute Mahou Shoujo to Aku wa Tekitai shiteita.": {
+    "description_hash": "1246f6c51404d57df27e1de8f36b40c630a0f4de6bec88c4d7911054d70d3be8",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "да",
+    "love_vibes": "да",
+    "approximateage": "18-25"
+  },
+  "Признания / Tsurezure Children": {
+    "description_hash": "9b4dfd04e30673ff43850b6e9ff1fa638a3577bb5b6cf5d2020f3b2d00d19643",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Капризы Апельсиновой улицы / Kimagure Orange☆Road": {
+    "description_hash": "c1729d72bffc0d5d5217824c2e5a28d659eacf6085ba2e91c0445427ad12d131",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "да",
+    "love_vibes": "да",
+    "approximateage": "15"
+  },
+  "Пустоголовый переведённый ученик / Jijou wo Shiranai Tenkousei ga Guigui Kuru.": {
+    "description_hash": "f6272c03b11c011af28270318a5bb59a5aef89fb9a6960b2b160ab2b89af581e",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "да",
+    "love_vibes": "нет",
+    "approximateage": "10-12"
+  },
+  "Спецкласс А / Special A": {
+    "description_hash": "a755a5631fde4d0dee13a02922b9f5c5aa77d2ceaecfb39e618330450a1aee12",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Дурни, тесты, аватары / Baka to Test to Shoukanjuu": {
+    "description_hash": "841019b67b8cf02299463c32e4daea6c1b052916666fa8081bb5c00f7a4bc52d",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "да",
+    "love_vibes": "нет",
+    "approximateage": "16-18"
+  },
+  "Явара! / Yawara!": {
+    "description_hash": "56f29a8409cd17a9ec2c3968e2433ab469b13b4aa3b00fe2cd712454c2100fcb",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Как воспитать героиню из обычной девушки / Saenai Heroine no Sodatekata": {
+    "description_hash": "2842d172832884e31dc8b5c75b582bf338fc00f3c7b31ae2ccf3dab2f207fe1c",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-20"
+  },
+  "Любовь похожа на прошедший дождь / Koi wa Ameagari no You ni": {
+    "description_hash": "7b0392ce0f7bbad0deebfb4ce2f50ff1b0fc59c7ec0c4c044ce3da6859ee46d4",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "17-45"
+  },
+  "С места на место / Acchi Kocchi": {
+    "description_hash": "03db579ad66923fbc8ed987d2907b454f040604b8476eeafd17cf0ca7d2de1ea",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "unknown",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Эльфийская песнь / Elfen Lied": {
+    "description_hash": "74561b07eca08f15360eebf517b20ff66a3175f65532c24aadeaee91e92b434c",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "да",
+    "mystical": "да",
+    "love_vibes": "нет",
+    "approximateage": "17-20"
+  },
+  "Плод Грисайи / Grisaia no Kajitsu": {
+    "description_hash": "3eacfe9f725d270108d8c4374fd60e036211d4a013e3189d9d033f5205a70e7c",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Нас всегда разделяли 10 сантиметров / Itsudatte Bokura no Koi wa 10 cm Datta.": {
+    "description_hash": "ae81ef55a037a887e0e1983d984bc79686ba50265b51bcb54207022f3185a3b2",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "unknown",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-20"
+  },
+  "Джульетта из школы-интерната / Kishuku Gakkou no Juliet": {
+    "description_hash": "b416412a95370150b09e4f2160d2c2567fb1bd19a9fe22e499b2723b8c188f18",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "unknown",
+    "violence": "да",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Чудовище за соседней партой / Tonari no Kaibutsu-kun": {
+    "description_hash": "8993ce9f8a57958b6d2e5fa3f9265aa2c003e06628f10c7c1952e527fd007214",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Не издевайся, Нагаторо: Вторая атака / Ijiranaide, Nagatoro-san 2nd Attack": {
+    "description_hash": "b2ac258ad39a38a2cf5f26d9615995b3c8354ba5beffe575848cc590e4edd454",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Глядя на полумесяц / Hanbun no Tsuki ga Noboru Sora": {
+    "description_hash": "997c866388c990c2d0a822235d78cef8d6a28236a73c4e0166f8fa7317f6e4ae",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "17"
+  },
+  "Моя малышка / Aishiteruze Baby★★": {
+    "description_hash": "2c5699b4122f1040c6bd53fd87789dc7e7d0fe0d1bda42afb220867888c29b63",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "15-18"
+  },
+  "Стихотворения ста поэтов: Песни о любви / Chouyaku Hyakuninisshu: Uta Koi.": {
+    "description_hash": "113629f725cd312af7eae9911688840b9246e2265bc1581e908f18a6cf8d6936",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "unknown",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "не указано"
+  },
+  "Нахальный ангел / Tenshi na Konamaiki": {
+    "description_hash": "d62fc65a4c408203db00409da3d1e62776dcb815a9ccfc7367dedbfdad7e682d",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "да",
+    "mystical": "да",
+    "love_vibes": "нет",
+    "approximateage": "16-18"
+  },
+  "Мальчик-мармелад / Marmalade Boy": {
+    "description_hash": "9b448b52136eb9c8ef3849b049754029834f65d16faea03b6817ecdc1c9eae56",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Золотая струна / Kiniro no Corda: Primo Passo": {
+    "description_hash": "7a3159e82885255a39723c32aae1c9056aabb56c83b1cb589da6d2623c4247c4",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "да",
+    "love_vibes": "нет",
+    "approximateage": "16-18"
+  },
+  "Озорной поцелуй / Itazura na Kiss": {
+    "description_hash": "ba9c2bc01194f09c83d54fb39c8e8f626b091ea017fb135e67f03d8217396e53",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Ремейк нашей жизни / Bokutachi no Remake": {
+    "description_hash": "bb55d5b8d195cdab3fa247d7e63ba0267f4253f9e59283bf9c7e6350b06b237e",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "да",
+    "love_vibes": "нет",
+    "approximateage": "28"
+  },
+  "Скажи: «Я люблю тебя» / Suki tte Ii na yo.": {
+    "description_hash": "deaecd0e5e40b588949b3938d34097eb5d6685117b52125bacc36d095c6645d6",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "История о том, как я пришёл на вечеринку, а там не было ни одной женщины / Goukon ni Ittara Onna ga Inakatta Hanashi": {
+    "description_hash": "5815fb951bc743eb40d32c9a3cb135fd8a9768b517d889fb95ea74f98eeab839",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "unknown",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "20-25"
+  },
+  "Нежный укус+ / Amagami SS+ Plus": {
+    "description_hash": "1a612d1d65c9b05d2d4d76a1e87d0ed84eac02c132316be0439c3e962090075f",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "17-18"
+  },
+  "Девушка-сэнрю / Senryuu Shoujo": {
+    "description_hash": "1db2ec3f289992995d4f0fbf90291874fe1a6f661ae7a45b15af6a4342593c54",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Карманы лета / Summer Pockets": {
+    "description_hash": "485f1657d4f1a5c06c928ab74a760c6b8405c5e0ec5a1605422728144ceece3f",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-20"
+  },
+  "За небрежной молодой девушкой ухаживает бывший жених её сестры / Zutaboro Reijou wa Ane no Moto Konyakusha ni Dekiai sareru": {
+    "description_hash": "ad9b553c3230f9a4ada81fac024ab76511e09d1b82844be0462c3105a7585539",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-20"
+  },
+  "Великие помыслы Нобуны Оды / Oda Nobuna no Yabou": {
+    "description_hash": "87341a08496442b1e91367beeb93035b0801bfce75588149046178536af8370d",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "да",
+    "mystical": "да",
+    "love_vibes": "да",
+    "approximateage": "17"
+  },
+  "Притворная любовь 2 / Nisekoi:": {
+    "description_hash": "41ed4a099f995ecf84e78d0faeafba7be84c9989073a253ccf17b8db5401b0e1",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Влюблённые учёные и научное доказательство любви / Rikei ga Koi ni Ochita no de Shoumei shitemita.": {
+    "description_hash": "7ce488aa40a8b8b71bc12bd41bdfc745e722c0cf687fe1a8c296ddd92840875f",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "unknown",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "20-30"
+  },
+  "Чувственные слова / Kaikan Phrase": {
+    "description_hash": "49bcf48814436e53a0be87dcbb9ee95cb4f3885abd958ddd2173a004a10ea363",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "unknown",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-20"
+  },
+  "Жизнь с моей сводной сестрой / Gimai Seikatsu": {
+    "description_hash": "bd13eae7cffc719d1a5b0afe1bbcbc421efd8473c4fda1a206f62dc04f4e46e2",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "unknown",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Терраса кафе богинь / Megami no Cafe Terrace": {
+    "description_hash": "3fcd57be50eab0c9bda1505c34166227e75720aee627e2852f4808070f67baeb",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "20-25"
+  },
+  "Лаборатория любви / Love Lab": {
+    "description_hash": "da505b45c7d129b53cc0ec6ab8f1c6eb4fa0f148908b77e0120ed35b053cb205",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "ORESUKI. Да как меня можешь любить только ты? / Ore wo Suki nano wa Omae dake ka yo": {
+    "description_hash": "d2503fbe3168b24d262a48d9791bb05581f9ac57f6e384bc9c324f18694a23d4",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Влюблённые учёные и научное доказательство любви 2 / Rikei ga Koi ni Ochita no de Shoumei shitemita. Heart": {
+    "description_hash": "d99742e3beab13bf4ef0af11a93d796453ef744a509bee9e6841bce981a6c997",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "unknown",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "20-30"
+  },
+  "Сезон беспокойных дев / Araburu Kisetsu no Otome-domo yo.": {
+    "description_hash": "3ea3314609645acb25a2d9bf7580a11d5a6e1e54e7ef418f85a39396a36e44d1",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Зимняя соната / Fuyu no Sonata": {
+    "description_hash": "86eb1fec94b2ee5188cfb2931385eba2d8a4de89da79da7443647d8624390a57",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Я не понимаю, что говорит мой муж 2 / Danna ga Nani wo Itteiru ka Wakaranai Ken 2 Sure-me": {
+    "description_hash": "391c95fc942817129c1ffbcf64fae3c80c0ede9afa3fcce283aeb93a0276b9ef",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "30-40"
+  },
+  "Ристоранте Парадизо / Ristorante Paradiso": {
+    "description_hash": "e33517a902df0963e36a821ade70d5ca4f27e3305600a002064de515eab17311",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "15"
+  },
+  "Непостижимая Ахарэн / Aharen-san wa Hakarenai": {
+    "description_hash": "3fbb6ccc3b465f6366c7c8fb959cd8a0e9304c353c57cf81b1c2f4c6d9ee3a31",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Запись / Rec": {
+    "description_hash": "3dd04ec88b331d96538ce0cddc92d1489ac9355a6404e80b021f35a389b89fa2",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "20-30"
+  },
+  "Нежный укус / Amagami SS": {
+    "description_hash": "2ead137b25efa303e5eca3ac39854898fbd23db4eafbbac9e0e7e572786083a8",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Я не понимаю, что говорит мой муж / Danna ga Nani wo Itteiru ka Wakaranai Ken": {
+    "description_hash": "8fbe1a2ff238253f144067dc6b9ddf87826cc346e7e870ad10987f2625dbb5fd",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "20-30"
+  },
+  "Радужные дни / Nijiiro Days": {
+    "description_hash": "dab950e2ad8c131e6bcee96d84a5dc3383edb71e49befd226359f75706d8bed1",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Мы не можем учиться! / Bokutachi wa Benkyou ga Dekinai": {
+    "description_hash": "ee82b60ddc51efbc57f05066eaa009f6ae42e1988390776dc9ba7abe3d50a898",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "16-18"
+  },
+  "Я побрился. Затем привёл домой старшеклассницу / Hige wo Soru. Soshite Joshikousei wo Hirou.": {
+    "description_hash": "8f80ae0a99d2300a647a6a721bd5402d9fa9cddb341eaae6a4ab2314e86e21c3",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "30"
+  },
+  "Настоящие слёзы / True Tears": {
+    "description_hash": "c4cca6edf5fb4545720ee22fda5a7d96183a55bc2afe414caf8ab5c006c02e12",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "да",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Предел первой любви / Hatsukoi Limited.": {
+    "description_hash": "4252fed67663c89c0871e57f7fe7ea487015465ea7cca766faccd84acca1bda9",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "unknown",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "15-18"
+  },
+  "Сэкирэй: Чистая связь / Sekirei: Pure Engagement": {
+    "description_hash": "c5b55f812d53829ace4c963022ff51bcae35c7b6a5520f4dd6ee2f3a365d35dc",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "да",
+    "mystical": "да",
+    "love_vibes": "да",
+    "approximateage": "18-25"
+  },
+  "Первый поцелуй / KimiKiss Pure Rouge": {
+    "description_hash": "ba1f4c8f0a10afa4c9107838ba77917a598ad0ac34fd24b0b483fc4aa501eb4d",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Слушайтесь папу! / Papa no Iukoto wo Kikinasai!": {
+    "description_hash": "4eb6981f5f64f9a0b981e70ccb6aecdde89a14b5c0173affd3f335802fee5df3",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "18-20"
+  },
+  "Было бы лучше, если бы здесь была только младшая сестра / Imouto sae Ireba Ii.": {
+    "description_hash": "7ab75380e1441b8f75af1dafbbe6349638078e2a3013f7c891aa09b62dc5fcd5",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "18-25"
+  },
+  "Удзаки хочет тусоваться! 2 / Uzaki-chan wa Asobitai! Double": {
+    "description_hash": "5e84c8827e753590df6b77e144efe8d75846e3d322a354ea8776841b9e3633a1",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "18-22"
+  },
+  "Это были мы / Bokura ga Ita": {
+    "description_hash": "6b178a4469589466619d82134987dbae46b93a8d5678d6a85b801a76effef1e9",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Да просто так! / Just Because!": {
+    "description_hash": "666f17e41bd4ae1bfb8e9ae744aeb5d0ac5bdf68abde8d5fe2246d4a962b9212",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "17-18"
+  },
+  "Загадочная девушка Х / Nazo no Kanojo X": {
+    "description_hash": "755e3de12a0f68025ae9a9e4040f73bcac1f6a610fe518b51e48b88e4a28ea7d",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "да",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Месть Масамунэ! R / Masamune-kun no Revenge R": {
+    "description_hash": "c62028b4bbab1a3d2795eda4e4f13eba06370aab9eb566653b86a2f5b136b4e7",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Х2 / H2": {
+    "description_hash": "82b6e0e93f82ffa9b4315d5f638c7dcd29b941a0a4d847c56dffcb1ecd229e0e",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "16-18"
+  },
+  "Микс: История Мэйсэй / Mix: Meisei Story": {
+    "description_hash": "5ccea58822c4f142d74f22e5b352d4a94ffda442138e78372a6953c4081845e2",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "16-18"
+  },
+  "Эй, цыпочка! / Mayo Chiki!": {
+    "description_hash": "aca39442dd97f213df22c7d29448206e217d0a9cc712658de436a3cbc4ca863d",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Мелодия Русалки: Пити Пити Питч / Mermaid Melody Pichi Pichi Pitch": {
+    "description_hash": "2cab5a935a9c55f51d55f1ccc2fd53a716e013933a38856c0b07c59cf419b4e5",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "да",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Не издевайся, Нагаторо / Ijiranaide, Nagatoro-san": {
+    "description_hash": "a1257cdee28dec21b9fde353caed814e7a05615356cbb0285296d8b927e7339e",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Секрет Харуки Ногидзаки / Nogizaka Haruka no Himitsu": {
+    "description_hash": "a47e4c9a4fb931e0edbf4b1b2afb8a07d33a123d622c5cd5de076d18c417b473",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Незнакомцы в другой жизни / Raise wa Tanin ga Ii": {
+    "description_hash": "0b87572f07928e8ef88bcee04076ffe4ab6f07e324f0d138e0714abd4843baa0",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-20"
+  },
+  "Девять принцесс / Princess Nine: Kisaragi Joshikou Yakyuubu": {
+    "description_hash": "c7994c94ed83427dfb68f8fb1f8d5cdf46fead424c4574f40a8a98ec55b78352",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "16-18"
+  },
+  "Секрет Харуки Ногидзаки: Невинность / Nogizaka Haruka no Himitsu Purezza ♪": {
+    "description_hash": "227b25790363b3993087a25f37ac728759dacad5b87cc8f4c733e0544c46d4ce",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-20"
+  },
+  "Букет для гадкой девочки / Busu ni Hanataba wo.": {
+    "description_hash": "9f149ee9568c4f4efd8cdd5c634e7166c67f9de1adf5ad4fda60c4fedc910d2d",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Сладкий лимонад / Honey Lemon Soda": {
+    "description_hash": "c810c3ba2640a62be05a9e1cfd09bc7924225ca30d7b4d1b47043e7bfda57727",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Судзука / Suzuka": {
+    "description_hash": "18c15cf3ab729f9880b79ff19bdf2cd8e9d9f2933b597c196a4a893fd8bcd0f9",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Поющий принц: Реально 2000% любовь / Uta no☆Prince-sama♪ Maji Love 2000%": {
+    "description_hash": "9796e09c48d45ff03f5816937c64fd22905aca489bae6a8d5745a8f703b3d22e",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "unknown",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-20"
+  },
+  "Беспокойные сердца / Kimi ga Nozomu Eien": {
+    "description_hash": "78a64dc26d470bf12680c7b42c3196f8c0304117534125ac6ed3b56d19d80432",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Котоура / Kotoura-san": {
+    "description_hash": "b4209b8ea1922da429fa23977c75fe1b87250c8b790546a1fa563c4ed353f6e4",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "да",
+    "love_vibes": "нет",
+    "approximateage": "15"
+  },
+  "Легенда о новой Белоснежке Притиар / Shin Shirayuki-hime Densetsu Pretear": {
+    "description_hash": "ad50c67d7f10bd38de03479e56d0dc9ba830f9cb38fe4ddb756f8a71e94f5038",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "да",
+    "love_vibes": "нет",
+    "approximateage": "16"
+  },
+  "Цветы зла / Aku no Hana": {
+    "description_hash": "7a9a7d582734ebedffcbe6c98ff1b628c69fad965c15ac11dad37b65997ddbe5",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Волчица и семеро друзей / Ookami-san to Shichinin no Nakama-tachi": {
+    "description_hash": "55fd7c74d1467f6f1577fb9ea60603021a28d55edfe429e2556d9de1c3d5dda3",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "да",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Любовная песня одного пилота / Toaru Hikuushi e no Koiuta": {
+    "description_hash": "e71bffed2fcd64ee49670e5d381427faf088c268c32f8d991a19b23f2302a772",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "да",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "20-30"
+  },
+  "У меня мало друзей / Boku wa Tomodachi ga Sukunai": {
+    "description_hash": "bceb09211365085d5ed5c86ae122285a4e5ccafcb595ba6af27255c8b93cb9b4",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "16-18"
+  },
+  "Госпожа Умница / Haikara-san ga Tooru": {
+    "description_hash": "fa318433d79832e1c4fd50b65312e47893cdb6d9f31c952a9b92c5edca3e8b22",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "17"
+  },
+  "Проклятие мультивыбора превратило мою жизнь в ад / Ore no Nounai Sentakushi ga, Gakuen Love Comedy wo Zenryoku de Jama Shiteiru": {
+    "description_hash": "4e3c2d4627de441c5583c4d0b626a5815986aec048af45f41368ab98543151c4",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "да",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Не называй это любовью! / Koi to Yobu ni wa Kimochi Warui": {
+    "description_hash": "2a104d2319ce663c63ce8dc1628973e22b723c34986a145d9a8ed8fc191bbb98",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-20"
+  },
+  "Вы правда женитесь? / Kekkon suru tte, Hontou desu ka": {
+    "description_hash": "591e3ebcb81d8cc883d5c620a19f363c58bb0be9d6c195f713377e1c7f765d27",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "unknown",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "20-30"
+  },
+  "Низкоуровневый персонаж Томодзаки / Jaku-Chara Tomozaki-kun": {
+    "description_hash": "f139cc9d859f1f76e9c9b1352bf9feeb82c6fa186967aef1d0443f8cba946e23",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "16-18"
+  },
+  "Темнее, чем индиго: Судьба / Ai Yori Aoshi: Enishi": {
+    "description_hash": "d0347358db319221450b30303513be63254c7cadd5d00406a8adbb10535d9c6d",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "20-25"
+  },
+  "Темнее, чем индиго / Ai Yori Aoshi": {
+    "description_hash": "d3cebff47a848279f65b486e8eaac26a1bd68b6fc9baa209c1ba2646b0622f8d",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "18-25"
+  },
+  "Для тебя; для меня / Myself; Yourself": {
+    "description_hash": "edea2d34ebffebdd51baa8bcf8e5a690b8dacb42927cead4dc69488d0ea27bc2",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Ты — хозяин, я — слуга / Kimi ga Aruji de Shitsuji ga Ore de": {
+    "description_hash": "442d11441c0e3aea9d8d72d4b7873197af26cb397d2dc175bac8aefacc90e8b6",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "unknown",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "16-20"
+  },
+  "Любовь и Хина / Love Hina": {
+    "description_hash": "979d060e07e9f0f97fbcdc3d8d6ae90177f4536be1c5062c7e2a1bf516f01d79",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "18-20"
+  },
+  "Тайные желания отвергнутых / Kuzu no Honkai": {
+    "description_hash": "7c9cbee4181b957053b81dae4362b8edf53687bacdd43e88448249ebae8eefa9",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "unknown",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Бей эйс! / Ace wo Nerae!": {
+    "description_hash": "a04383ec212bebcb2f84b28045ad4fef2e54d41c3886f94fae4310093d4d166f",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "15"
+  },
+  "Девушка, в которую я влюбился на Окинаве, говорит на диалекте, и с ней трудно иметь дело / Okinawa de Suki ni Natta Ko ga Hougen Sugite Tsurasugiru": {
+    "description_hash": "6087fa834284226052a43ebd3c2cf13d383f8197270e8c6819d01be8e3680ce9",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Дети семьи Сиундзи / Shiunji-ke no Kodomotachi": {
+    "description_hash": "b9b729f77164e97a7341a08b0d8b084afc062538cf14e3f7e2cea356007735ae",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "16-20"
+  },
+  "Ты — горничная / Kimi wa Meido-sama.": {
+    "description_hash": "dec6bd377201c17b64f1ed8080fbb056a83d8b91b8f50ac362cd964ff333d6a9",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "да",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "18-25"
+  },
+  "По велению неба / Sora no Manimani": {
+    "description_hash": "6007cc84dfd37f50e2f295373b0b0ce03debfee8fae8f263825ba7292c9b4e87",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "16-18"
+  },
+  "Досанко-гяру чудо как милы / Dosanko Gal wa Namara Menkoi": {
+    "description_hash": "a3589efcdef7b5944aafd7dde5e5adc3ead7328b139400df9a12bc5277a2d255",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Боевой дворецкий Хаятэ: Не могу оторвать от вас глаз! / Hayate no Gotoku! Can't Take My Eyes Off You": {
+    "description_hash": "d05d5267775fb6b39a5acd8d32ebac89b4530aee27f65c0c09a765dcc7132df7",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "16-20"
+  },
+  "Сэкирэй / Sekirei": {
+    "description_hash": "a60ff0ac8fba66beb1fba2a4c229d014886d0b2e61d172bac07e796eefadfb66",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "да",
+    "mystical": "да",
+    "love_vibes": "нет",
+    "approximateage": "18-22"
+  },
+  "Девушка влюбилась в старшую сестру / Otome wa Boku ni Koishiteru": {
+    "description_hash": "990aa7a1ef253dd57c1db0120ce5b6d69c71cc20d4fdbbbf775ebeaf2852143c",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Боевой дворецкий Хаятэ! Милашки / Hayate no Gotoku! Cuties": {
+    "description_hash": "d913ec3a6a3637a433841c04cb8595c52c4d69845fd94ef8b5d861103606c0b7",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "16-20"
+  },
+  "Какой прекрасный солнечный денёк! / Hiatari Ryoukou!": {
+    "description_hash": "a0f53f88114a91405699b68ccade964ddb56c69332dbba823426bf08f4b191e0",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Трепещущие воспоминания / Tokimeki Memorial: Only Love": {
+    "description_hash": "4cee63049a10bd9144e151538867eeb87ab98bd89ea6c0f0c2daa35dbb2731fd",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Аюму всё равно станет ближе / Soredemo Ayumu wa Yosetekuru": {
+    "description_hash": "4ff8dbc16d826a5296375150e227514c42a1357c3542bc8d5d83aeb015512e7e",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Поющий принц: Реально 1000% любовь / Uta no☆Prince-sama♪ Maji Love 1000%": {
+    "description_hash": "eb37e45704dd35ca35992fcca2bd0f543cd8f7ab06f2d92585fce6ec9b104204",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-20"
+  },
+  "Белоснежная симфония: Цвет влюблённых / Mashiro-iro Symphony: The Color of Lovers": {
+    "description_hash": "662552b2e9f680c280435c3fa936f7ed782077ad0fba8cc7a3c0a7fb3e45ba05",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Волчица и чёрный принц / Ookami Shoujo to Kuro Ouji": {
+    "description_hash": "a22ab0f961585cf6fcf8ed57be9d4b08d5835864237e6bf5618a76575717ec7e",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "16-18"
+  },
+  "Поющий принц: Любовные революции / Uta no☆Prince-sama♪ Maji Love Revolutions": {
+    "description_hash": "fcc7eafc5ed7fdcf1e78f81ad91c2066a1fa3027bf973390a068c84e9d503fc9",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "18-25"
   }
 }

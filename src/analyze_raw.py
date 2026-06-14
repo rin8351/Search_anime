@@ -5,6 +5,7 @@
 - уникальные ключи в записях аниме
 - уникальные значения в полях Жанры и Темы
 - уникальные значения Тип, Первоисточник, Статус
+- паттерны названий (ключей): «Русское название / Английское название»
 """
 
 import json
@@ -51,6 +52,40 @@ def status_to_pattern(status: str) -> str:
 
 def _collect_status_patterns(statuses: set[str]) -> list[str]:
     return sorted({status_to_pattern(status) for status in statuses})
+
+
+STANDARD_TITLE_PATTERN = 'RU / EN'
+
+
+def title_to_pattern(title: str) -> str:
+    """
+    Классифицирует ключ (название аниме) по структурному паттерну.
+    Ожидаемый формат: «Русское название / Английское название».
+    """
+    parts = [part.strip() for part in title.split(' / ')]
+
+    if len(parts) == 2 and parts[0] and parts[1]:
+        return STANDARD_TITLE_PATTERN
+
+    if ' / ' in title:
+        return f'multiple_parts ({len(parts)})'
+
+    if '/' in title:
+        return 'slash without spaces'
+
+    return 'no separator'
+
+
+def _collect_title_patterns(titles: list[str]) -> dict[str, int]:
+    counts: dict[str, int] = {}
+    for title in titles:
+        pattern = title_to_pattern(title)
+        if pattern == 'no separator':
+            print('title without separator:',title)
+        elif pattern == 'multiple_parts (3)':
+            print('title with multiple parts:',title)
+        counts[pattern] = counts.get(pattern, 0) + 1
+    return dict(sorted(counts.items(), key=lambda item: (-item[1], item[0])))
 
 
 def _split_tokens(value: str) -> list[str]:
@@ -108,6 +143,9 @@ def collect_analytics(anime_dict: dict) -> dict:
         else:
             without_status += 1
 
+    title_patterns = _collect_title_patterns(list(anime_dict.keys()))
+    matching_titles = title_patterns.get(STANDARD_TITLE_PATTERN, 0)
+
     return {
         'stats': {
             'total_anime': len(anime_dict),
@@ -115,9 +153,12 @@ def collect_analytics(anime_dict: dict) -> dict:
             'total genres': len(genres),
             'total themes': len(themes),
             'total types': len(types),
+            'titles_ru_en_pattern': matching_titles,
+            'titles_other_patterns': len(anime_dict) - matching_titles,
         },
         'field_keys': sorted(field_keys),
         'status_patterns': _collect_status_patterns(statuses),
+        'title_patterns': title_patterns,
         'sources': sorted(sources),
         'genres': sorted(genres),
         'themes': sorted(themes),
@@ -155,6 +196,13 @@ def analyze_database_file(input_file, output_file):
     print(f"Уникальных типов:         {stats['total types']}")
     print(f"Уникальных ключей:        {len(result['field_keys'])}")
     print(f"Уникальных паттернов:     {len(result['status_patterns'])}")
+    print('-' * 70)
+    print('Паттерны названий (ключей):')
+    print(f"  {STANDARD_TITLE_PATTERN}: {stats['titles_ru_en_pattern']}")
+    print(f"  Другие форматы:         {stats['titles_other_patterns']}")
+    for pattern, count in result['title_patterns'].items():
+        if pattern != STANDARD_TITLE_PATTERN:
+            print(f"    {pattern}: {count}")
     print('=' * 70)
     print(f'\nРезультат сохранён в {output_path}')
 

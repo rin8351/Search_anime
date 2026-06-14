@@ -4,7 +4,9 @@
     "total sources": 17,
     "total genres": 45,
     "total themes": 146,
-    "total types": 8
+    "total types": 8,
+    "titles_ru_en_pattern": 6245,
+    "titles_other_patterns": 23
   },
   "field_keys": [
     "description",
@@ -31,6 +33,11 @@
     "с day, mounth, year по year",
     "с mounth year по year"
   ],
+  "title_patterns": {
+    "RU / EN": 6245,
+    "no separator": 22,
+    "multiple_parts (3)": 1
+  },
   "sources": [
     "Более одного",
     "Веб-манга",

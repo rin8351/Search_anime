@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 from openai import OpenAI
 from pydantic import BaseModel, create_model
 
-load_dotenv()
+load_dotenv(".env")
 
 DEFAULT_CACHE_FILE = "data/cache/ai_analysis.json"
 DEFAULT_PROMPTS_DIR = "prompts"
@@ -139,7 +139,7 @@ def analyze_anime_with_ai(
 
     try:
         completion = client.beta.chat.completions.parse(
-            model="gpt-4o-mini",
+            model=os.getenv("model"),
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt},
@@ -208,7 +208,7 @@ def process_anime_database(
         )
         if analysis:
             cached_count += 1
-            print("  ↺ из кэша")
+            print("----из кэша")
             _apply_analysis(anime_info, analysis)
             _print_analysis(analysis)
             continue

@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Точка входа: настройка критериев и запуск полного pipeline.
+Точка входа: запуск полного pipeline.
 
-Все настройки — в этом файле. Промежуточные JSON не создаются,
+Все настройки — в config.py. Промежуточные JSON не создаются,
 сохраняется только итоговый результат.
 """
 
@@ -15,47 +15,18 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-# =============================================================================
-# НАСТРОЙКИ
-# =============================================================================
-
-# Пути к данным
-PROCESSED_FILE = "data/processed/anime_database.json"
-OUTPUT_FILE = "data/results/final_anime.json"
-
-# --- Этап 1: базовая фильтрация (1_filter_basic.py) ---
-BASIC_FILTER = {
-    "only_tv_series": True,       # только TV сериалы
-    "exclude_sequels": True,      # исключить продолжения/сезоны
-    "exclude_rating_g": True,     # исключить детский рейтинг G
-    "min_rating": 7.5,            # минимальный зрительский рейтинг (None — не проверять)
-}
-
-# --- Этап 2: фильтр жанров и тем (3_filter_romantic.py) ---
-Genre_FILTER = {
-    "excluded_genres": ["Сверхъестественное", "Sci-Fi Фантастика", "Фэнтези"], # исключить жанры
-    "excluded_themes": ["Школа","Махо-сёдзё"], # исключить темы
-    "required_genres": ["Романтика"], # включить жанры
-    "required_themes": [], # включить темы
-}
-
-# --- Этап 3: AI-анализ (3_analyze_with_ai.py) ---
-AI_CACHE_FILE = "data/cache/ai_analysis.json"  # None — отключить кэш
-PROMPTS_DIR = "prompts"                          # папка с промптами (prompts/questions/*.txt)
-ASK_BEFORE_AI = False       # спросить Да/Нет в терминале перед запросом к API
-RUN_AI_ANALYSIS = False    # если ASK_BEFORE_AI = False: True — всегда, False — никогда
-
-# --- Этап 4: финальная фильтрация (4_final_filter.py) ---
-# None = критерий не применяется (и вопрос не отправляется в AI на этапе 3)
-FINAL_FILTER = {
-    "hero": "female",       # "female", "male", "unknown" или None
-    "violence": "нет",      # "да", "нет" или None
-    "mystical": "нет",      # "да", "нет" или None
-    "love_vibes": "да",     # "да", "нет" или None
-    "min_age": 18,          # минимальный возраст героя (None — не проверять)
-}
-
-# =============================================================================
+from config import (
+    AI_CACHE_FILE,
+    ASK_BEFORE_AI,
+    BASIC_FILTER,
+    FINAL_FILTER,
+    Genre_FILTER,
+    OUTPUT_FILE,
+    PROCESSED_FILE,
+    PROMPTS_DIR,
+    RUN_AI_ANALYSIS,
+    WATCHED_ANIME,
+)
 
 
 def _load_module(name: str, filename: str):
@@ -117,7 +88,7 @@ def main():
     print(f"Всего аниме: {len(anime_dict)}\n")
 
     # Этап 1
-    data = filter_basic_mod.filter_basic(anime_dict, **BASIC_FILTER)
+    data = filter_basic_mod.filter_basic(anime_dict, watched_anime=WATCHED_ANIME, **BASIC_FILTER)
 
     # Этап 2
     data = filter_romantic_mod.filter_romantic_anime(data, **Genre_FILTER)
@@ -138,6 +109,10 @@ def main():
             cache_file=AI_CACHE_FILE,
             prompts_dir=project_root / PROMPTS_DIR,
         )
+        with open("data/processed/filtered_with_ai.json", "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+        print(f"\nРезультат сохранён в data/processed/filtered_with_ai.json")
+        
         data = final_filter_mod.filter_anime(data, **FINAL_FILTER)
     elif not ai_fields:
         print("\nВсе критерии этапа 4 отключены — этапы 3–4 пропущены.")
