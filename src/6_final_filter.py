@@ -45,7 +45,7 @@ def filter_anime(
     filtered = {}
 
     for title, details in anime_data.items():
-        if hero is not None and details.get('hero') != hero:
+        if hero is not None and (details.get('hero') != hero and details.get('hero') != "unknown"):
             continue
         if violence is not None and details.get('violence') != violence:
             continue

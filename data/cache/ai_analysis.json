@@ -3044,5 +3044,455 @@
     "mystical": "нет",
     "love_vibes": "да",
     "approximateage": "18-25"
+  },
+  "О движении Земли / Chi. Chikyuu no Undou ni Tsuite": {
+    "description_hash": "a9be7f54de5c40a78de8ec953936308de1e74e3ec27e31c2a75e911f4c6d8690",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "да",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "20-30"
+  },
+  "Ребёнок идола / [Oshi no Ko]": {
+    "description_hash": "3968dcba5c0c7236f9dbf3f37c270424d2edcd1111d30853b73caa11ac59403c",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "unknown",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "подростки"
+  },
+  "Волейбол!! К вершине / Haikyuu!! To the Top": {
+    "description_hash": "3ec83afb3022b9446e8300141242401efaf36305aff293d4efef530882297365",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "16-18"
+  },
+  "Плач девичьей группы / Girls Band Cry": {
+    "description_hash": "5da6d97361b9efb6f3890037a5ee223df281aba18f23ef27c240916c13ed434e",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "16-18"
+  },
+  "Семёрка идолов 3. Часть 2 / IDOLiSH7 Third Beat! Part 2": {
+    "description_hash": "93794fb0eb0948b9b04b34beb4281fd7c3699c14627e1b4b95a3b0df4b146517",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "unknown",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "18-25"
+  },
+  "Семья шпиона. Часть 2 / Spy x Family Part 2": {
+    "description_hash": "78c3876c634c7da8529de32830c784a84c3ba2c2652b1a5528cbc73417de8853",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "unknown",
+    "violence": "да",
+    "mystical": "да",
+    "love_vibes": "нет",
+    "approximateage": "10-30"
+  },
+  "Басня / The Fable": {
+    "description_hash": "7525c358d6f0e5856b7969fefff7f112e4d2396cbce6517d2bbf6d38ddf0b9b0",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "да",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "30-40"
+  },
+  "Руки прочь от кинокружка! / Eizouken ni wa Te wo Dasu na!": {
+    "description_hash": "0c8f4b581f7e3044f23c105dc5195bdf58692131aaae14bfc9d142a7223299e4",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "15-18"
+  },
+  "Драгоценности Рури / Ruri no Houseki": {
+    "description_hash": "0560c00135edfa7dca1361a0292c1c826b4fa5d9dd3b07ef154270a8ac6892a2",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "16-18"
+  },
+  "Скрытые вещи / Kakushigoto": {
+    "description_hash": "cd3289b762deccb0309364b40caf34676588dd57a3cc62ddeb428f219ba4a395",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "10"
+  },
+  "Дни Сакамото. Часть 2 / Sakamoto Days Part 2": {
+    "description_hash": "c314c3a2c8c47f864b940df92a7799f77707e01a5fff4e47fa84ed3a7c07b57f",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "да",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "30-40"
+  },
+  "Мой новый босс глупый / Atarashii Joushi wa Do Tennen": {
+    "description_hash": "e6f3090c7a02d0425e9410ec91e9a0392c0ba4ef7d1ecb97a654a62d012ca9ec",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "30-40"
+  },
+  "Энн Ширли / Anne Shirley": {
+    "description_hash": "2ec87d75d5dd8958af582e795e7479cc42541394948007cf1922a7b05acdf2d1",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "12-14"
+  },
+  "Четверо братьев Юдзуки / Yuzuki-san Chi no Yonkyoudai.": {
+    "description_hash": "85e44e76fe19270d6e3e0af772f0af7f068a0fe7b551eff161b063c4867e7400",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "20-25"
+  },
+  "Танцуй, танцуй, танцор / Dance Dance Danseur": {
+    "description_hash": "4ecd2a6e12fa06f365d766db69510e21cbabdcbd3d50612528ad54809e5792e2",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "подросток/молодой человек (примерно 15-20 лет)"
+  },
+  "Голубой период / Blue Period": {
+    "description_hash": "1189302419003f8452ed4eb7d0be5c0305b20f1cabdeab7b7ca2a3ece0df777a",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "17-18"
+  },
+  "Медуза не умеет плавать в ночи / Yoru no Kurage wa Oyogenai": {
+    "description_hash": "0114e0b8e02d452a92f09399ab1d077b4bcdd00c1f0169654066b4f773e2f61c",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "16-18"
+  },
+  "Дни проходят, а еда по-прежнему хороша / Hibi wa Sugiredo Meshi Umashi": {
+    "description_hash": "ffb9ddf3c6c8e0a4fa2a9fc502ba8d9f995a92b4f73f0d1f71d468fb88887864",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "18-22"
+  },
+  "Дочка босса и её нянька / Kumichou Musume to Sewagakari": {
+    "description_hash": "c4a3865916ba4479c6978ba534156a7616c0dc856292452d62557e72cceebfe4",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "да",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "30-40"
+  },
+  "Девушка из оперы! / Kageki Shoujo!!": {
+    "description_hash": "70a10bd5ec410c54c01c04065bf75b490d4269cfa833c1283ae4b4de533bcf70",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "17-25"
+  },
+  "Моно / Mono": {
+    "description_hash": "4bb698a242b3c7d389f156495b7e083d89d7c8b534ac32cc562898e2364f06ce",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "16-18"
+  },
+  "Игра друзей / Tomodachi Game": {
+    "description_hash": "df75d4af05d45f120b2dfd22293238e0ced3fe4ad8988dcdec7cdc7c21524d6a",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "да",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "16-18"
+  },
+  "Тандзабуро Тодзима хочет стать Наездником в маске / Toujima Tanzaburou wa Kamen Rider ni Naritai": {
+    "description_hash": "7fec844d681e210f700d0ab78fd72d0aaca03964a800793ee2867a0185790334",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "да",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "40"
+  },
+  "Школьная форма Акэби / Akebi-chan no Sailor-fuku": {
+    "description_hash": "27e284e96a20770d824a8bfc75e0f6a56671b78900d50a9e7e7cd5f970414422",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "12-14"
+  },
+  "Кот, мастер на все лапки, сегодня снова грустит / Dekiru Neko wa Kyou mo Yuuutsu": {
+    "description_hash": "a259ffeee11228e46c463a59519204a0d322a5380e08038d1fdbd23b8dae2c2c",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "20-30"
+  },
+  "Пойдём в караоке! / Karaoke Iko!": {
+    "description_hash": "4c2e19e8da7f1d506a50247bde044b042c942d56c53dfb03672e672e250485e5",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "16-18"
+  },
+  "Жизнь ниндзя и убийцы / Ninja to Koroshiya no Futarigurashi": {
+    "description_hash": "445c99d37003d5017b2399d5f7b678b940426e4e0afcc11f169afaf3b9406cdb",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "да",
+    "mystical": "да",
+    "love_vibes": "нет",
+    "approximateage": "16-18"
+  },
+  "Война горничных Акибы / Akiba Meido Sensou": {
+    "description_hash": "7689b340137c6d60ab32a96c2713c5553c9ee6b749bce5ad283cbd36d763a8fd",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "female",
+    "violence": "да",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "18-25"
+  },
+  "Дни Сакамото / Sakamoto Days": {
+    "description_hash": "278353edcf1b6f5a5bd9169a24c6b945aaf2b67335268fd2602171f1c7c6f0cb",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "да",
+    "mystical": "нет",
+    "love_vibes": "да",
+    "approximateage": "30-40"
+  },
+  "Игра на триллион / Trillion Game": {
+    "description_hash": "81efd4b633f991010cb4c5f7f8c85c96399ae5cdd63329d9f64378874c672a3d",
+    "requested_fields": [
+      "hero",
+      "violence",
+      "mystical",
+      "love_vibes",
+      "approximateage"
+    ],
+    "hero": "male",
+    "violence": "нет",
+    "mystical": "нет",
+    "love_vibes": "нет",
+    "approximateage": "20-25"
   }
 }

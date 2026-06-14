@@ -81,23 +81,3 @@ def filter_romantic_anime(
 
     return filtered_data
 
-
-if __name__ == "__main__":
-    input_file = "data/processed/filtered_anime.json"
-    output_file = "data/processed/filtered_romantic.json"
-
-    with open(input_file, 'r', encoding='utf-8') as f:
-        anime_data = json.load(f)
-
-    result = filter_romantic_anime(
-        anime_data,
-        excluded_genres=['Сверхъестественное', 'Sci-Fi Фантастика', 'Фэнтези'],
-        excluded_themes=['Школа', 'Махо-сёдзё'],
-        required_genres=['Романтика'],
-        required_themes=[],
-    )
-
-    Path(output_file).parent.mkdir(parents=True, exist_ok=True)
-    with open(output_file, 'w', encoding='utf-8') as f:
-        json.dump(result, f, ensure_ascii=False, indent=2)
-    print(f"\nФайл создан: {output_file}")

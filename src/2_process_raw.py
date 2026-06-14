@@ -2,8 +2,9 @@
 # -*- coding: utf-8 -*-
 """
 Обработка сырых данных: преобразование в структурированный формат.
-Сначала оставляет только «оригиналы» сериалов (самый ранний выпуск в группе),
-затем отфильтровывает записи без description или с пустым описанием.
+Оставляет только TV Сериал и Фильм, затем только «оригиналы» сериалов
+(самый ранний выпуск в группе), затем исключает записи без description
+или с пустым описанием.
 """
 
 import json
@@ -14,6 +15,7 @@ from pathlib import Path
 
 MIN_VALID_YEAR = 1900
 CONTINUATIONS_FILE = 'data/processed/anime_continuations.json'
+ALLOWED_TYPES = frozenset({'TV Сериал', 'Фильм'})
 
 
 def _append_field(entry, field_name, value):
@@ -49,6 +51,13 @@ def _get_status_from_raw(anime_data):
     for key in anime_data.get('info', {}):
         if key.startswith('Статус:'):
             return key.replace('Статус:', '').strip()
+    return None
+
+
+def _get_type_from_raw(anime_data):
+    for key in anime_data.get('info', {}):
+        if key.startswith('Тип:'):
+            return key.replace('Тип:', '').strip()
     return None
 
 
@@ -138,8 +147,6 @@ def _transform_entry(anime_data, continuation_count):
             _append_field(entry, 'Темы', key.split(':', 1)[1].strip())
         elif key.startswith('Статус:'):
             entry['Статус'] = key.replace('Статус:', '').strip()
-        elif key.startswith('Длительность эпизода:'):
-            entry['Длительность эпизода'] = key.replace('Длительность эпизода:', '').strip()
         elif key.startswith('Первоисточник:'):
             entry['Первоисточник'] = key.replace('Первоисточник:', '').strip()
 
@@ -159,21 +166,29 @@ def _has_description(anime_data):
 def process_raw(anime_dict):
     """
     Преобразует сырые данные в структурированный формат.
-    Сначала оставляет только оригиналы сериалов, затем исключает записи
-    без description или с пустым описанием.
+    Оставляет только TV Сериал и Фильм, затем только оригиналы сериалов,
+    затем исключает записи без description или с пустым описанием.
     """
     print("=" * 70)
     print("ОБРАБОТКА СЫРЫХ ДАННЫХ")
     print("=" * 70)
     print(f"Всего аниме: {len(anime_dict)}")
 
-    keep_names, continuation_counts, continuations_map = _resolve_series(anime_dict)
-    skipped_continuation = len(anime_dict) - len(keep_names)
+    type_filtered = {}
+    skipped_wrong_type = 0
+    for anime_name, anime_data in anime_dict.items():
+        if _get_type_from_raw(anime_data) in ALLOWED_TYPES:
+            type_filtered[anime_name] = anime_data
+        else:
+            skipped_wrong_type += 1
+
+    keep_names, continuation_counts, continuations_map = _resolve_series(type_filtered)
+    skipped_continuation = len(type_filtered) - len(keep_names)
 
     processed = {}
     skipped_no_description = 0
 
-    for anime_name, anime_data in anime_dict.items():
+    for anime_name, anime_data in type_filtered.items():
         if anime_name not in keep_names:
             continue
         if not _has_description(anime_data):
@@ -188,9 +203,9 @@ def process_raw(anime_dict):
     print("СТАТИСТИКА ОБРАБОТКИ")
     print("=" * 70)
     print(f"Исходное количество:           {len(anime_dict)}")
+    print(f"Исключено по типу:             {skipped_wrong_type}")
     print(f"Исключено продолжений:         {skipped_continuation}")
     print(f"Исключено без описания:        {skipped_no_description}")
-    print(f"Сериалов с продолжениями:      {len(continuations_map)}")
     print(f"Итого в базе:                  {len(processed)}")
     print("=" * 70)
 

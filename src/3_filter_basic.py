@@ -159,35 +159,26 @@ def is_watched(anime_name, watched_list):
     return False
 
 
-def is_sequel_or_continuation(anime_name):
-    """Проверяет, является ли аниме продолжением/сезоном"""
-    if '/' not in anime_name:
+def _has_continuations(anime_data):
+    """True, если у аниме есть связанные Продолжения (поле «Продолжения» > 0)."""
+    count = anime_data.get('Продолжения', 0)
+    try:
+        return int(count) > 0
+    except (TypeError, ValueError):
         return False
 
-    russian_part = anime_name.split('/')[0].strip()
 
-    patterns = [
-        r'второй\s+сезон',
-        r'третий\s+сезон',
-        r'2\s+сезон',
-        r'3\s+сезон',
-    ]
-
-    for pattern in patterns:
-        if re.search(pattern, russian_part, re.IGNORECASE):
-            return True
-
-    continuation_keywords = [
-        r'продолжение', r'финал', r'часть\s+\d+',
-        r'final season', r'2nd season', r'3rd season'
-    ]
-
-    full_name_lower = anime_name.lower()
-    for keyword in continuation_keywords:
-        if re.search(keyword, full_name_lower):
-            return True
-
-    return False
+def _validate_bool_filter(value, setting_name):
+    """None — фильтр отключён. Ожидается bool."""
+    if value is None:
+        return None
+    if isinstance(value, bool):
+        return value
+    print(
+        f"Предупреждение: для «{setting_name}» ожидается None или bool. "
+        f"Фильтр отключён."
+    )
+    return None
 
 
 def filter_basic(
@@ -195,7 +186,7 @@ def filter_basic(
     *,
     type_of_anime=None,
     source_material=None,
-    exclude_sequels=True,
+    has_continuations=None,
     exclude_rating_g=True,
     min_rating=6.0,
     min_episodes=None,
@@ -210,6 +201,7 @@ def filter_basic(
     valid_types, valid_sources = _load_analytic_options()
     allowed_types = _validate_choice(type_of_anime, valid_types, "type_of_anime")
     allowed_sources = _validate_choice(source_material, valid_sources, "source_material")
+    has_continuations = _validate_bool_filter(has_continuations, "has_continuations")
     min_year = _validate_year(min_year, "min_year")
     max_year = _validate_year(max_year, "max_year")
 
@@ -232,6 +224,7 @@ def filter_basic(
         "wrong_source": 0,
         "watched": 0,
         "sequel": 0,
+        "continuations": 0,
         "rating_g": 0,
         "low_score": 0,
         "episodes": 0,
@@ -255,9 +248,10 @@ def filter_basic(
 
         rating_info = anime_data.get("Рейтинг")
 
-        if exclude_sequels and is_sequel_or_continuation(anime_name):
-            stats["sequel"] += 1
-            continue
+        if has_continuations is not None:
+            if _has_continuations(anime_data) != has_continuations:
+                stats["continuations"] += 1
+                continue
 
         if exclude_rating_g and rating_info == "G":
             stats["rating_g"] += 1
@@ -314,8 +308,9 @@ def filter_basic(
         print(f"Исключено по первоисточнику ({sources_label}): {stats['wrong_source']}")
     if watched_anime:
         print(f"Исключено просмотренных:       {stats['watched']}")
-    if exclude_sequels:
-        print(f"Исключено продолжений:         {stats['sequel']}")
+    if has_continuations is not None:
+        label = "с продолжениями" if has_continuations else "без продолжений"
+        print(f"Исключено ({label}):           {stats['continuations']}")
     if exclude_rating_g:
         print(f"Исключено рейтинг G:           {stats['rating_g']}")
     if min_rating is not None:

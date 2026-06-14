@@ -21,35 +21,35 @@ WATCHED_ANIME = [
 # --- Этап 1: базовая фильтрация (3_filter_basic.py) ---
 BASIC_FILTER = {
     # None — не фильтровать; str или list[str] — оставить указанные варианты.
-    # Допустимые значения: data/processed/analytic.json → types
+    # Допустимые значения: TV Сериал, Фильм
     "type_of_anime": "TV Сериал",
     # None — не фильтровать; str или list[str] — оставить указанные варианты.
     # Допустимые значения: data/processed/analytic.json → sources
     "source_material": None,
-    "exclude_sequels": True,      # исключить продолжения/сезоны
+    # None — не фильтровать; True — только с продолжениями; False — только без продолжений
+    "has_continuations": False,
     "exclude_rating_g": True,     # исключить детский рейтинг G
-    "min_rating": 8.5,            # минимальный зрительский рейтинг (None — не проверять)
+    "min_rating": 7.5,            # минимальный зрительский рейтинг (None — не проверять)
     "min_episodes": None,         # минимум эпизодов по ключу «Эпизоды» (None — не проверять)
-    "max_episodes": None,         # максимум эпизодов по ключу «Эпизоды» (None — не проверять)
+    "max_episodes": 50,         # максимум эпизодов по ключу «Эпизоды» (None — не проверять)
     # None — не фильтровать; int — год выпуска по ключу «Статус» (сравнение только по году).
     # Допустимые форматы дат: data/processed/analytic.json → status_patterns
-    "min_year": None,             # минимальный год выпуска
-    "max_year": 1980,             # максимальный год выпуска
+    "min_year": 2000,             # минимальный год выпуска
+    "max_year": None,             # максимальный год выпуска
 }
 
 # --- Этап 2: фильтр жанров и тем (3_filter_romantic.py) ---
 Genre_FILTER = {
-    #"excluded_genres": ["Fantasy", "Mystery","Сверхъестественное","Sci-Fi Фантастика","Фэнтези"], # исключить жанры
-    "excluded_genres": [], # исключить жанры
-    "excluded_themes": [], # исключить темы
-    "required_genres": [], # включить жанры
+    "excluded_genres": ["Fantasy", "Mystery","Сверхъестественное","Sci-Fi Фантастика","Фэнтези"], # исключить жанры
+    "excluded_themes": ["Школа"], # исключить темы
+    "required_genres": ["Романтика"], # включить жанры
     "required_themes": [], # включить темы
 }
 
 # --- Этап 3: AI-анализ (3_analyze_with_ai.py) ---
 AI_CACHE_FILE = "data/cache/ai_analysis.json"  # None — отключить кэш
 PROMPTS_DIR = "prompts"                          # папка с промптами (prompts/questions/*.txt)
-ASK_BEFORE_AI = False       # спросить Да/Нет в терминале перед запросом к API
+ASK_BEFORE_AI = True       # спросить Да/Нет в терминале перед запросом к API
 RUN_AI_ANALYSIS = False    # если ASK_BEFORE_AI = False: True — всегда, False — никогда
 
 # --- Этап 4: финальная фильтрация (4_final_filter.py) ---

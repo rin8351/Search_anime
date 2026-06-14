@@ -1,2 +1,3 @@
 .env
 ai_file.py
+data/cache/ai_analysis.json

@@ -235,36 +235,3 @@ def process_anime_database(
     if cache_path:
         print(f"Из кэша: {cached_count}, новых запросов к API: {api_count}")
     return anime_data
-
-
-def main():
-    input_file = "data/processed/filtered_romantic.json"
-    output_file = "data/processed/filtered_with_ai.json"
-
-    api_key = os.getenv("OPENAI_API_KEY")
-    if not api_key:
-        print("API ключ не найден!")
-        print("Создайте файл .env и добавьте: OPENAI_API_KEY=your_api_key_here")
-        return
-
-    final_filter = {
-        "hero": "female",
-        "violence": "нет",
-        "mystical": "нет",
-        "love_vibes": "да",
-        "min_age": 18,
-    }
-    fields = fields_from_final_filter(final_filter)
-
-    with open(input_file, "r", encoding="utf-8") as f:
-        anime_data = json.load(f)
-
-    result = process_anime_database(anime_data, api_key, fields)
-
-    with open(output_file, "w", encoding="utf-8") as f:
-        json.dump(result, f, ensure_ascii=False, indent=2)
-    print(f"Результат сохранён в {output_file}")
-
-
-if __name__ == "__main__":
-    main()
