@@ -6,5 +6,5 @@ pydantic==2.6.1
 python-dotenv==1.0.1
 
 # Utilities
-tqdm==4.66.1  # Progress bars (optional, для улучшения UX)
+tqdm==4.66.1  # Progress bars (optional, for better UX)
 

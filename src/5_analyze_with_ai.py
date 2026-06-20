@@ -33,16 +33,16 @@ FIELD_DEFAULTS = {
 }
 
 FIELD_LABELS = {
-    "hero": "Герой",
-    "violence": "Жестокость",
-    "mystical": "Мистика",
-    "love_vibes": "Любовь",
-    "approximateage": "Возраст",
+    "hero": "Hero",
+    "violence": "Violence",
+    "mystical": "Mystical",
+    "love_vibes": "Romance",
+    "approximateage": "Age",
 }
 
 
 def fields_from_final_filter(final_filter: dict) -> list[str]:
-    """Поля для AI-анализа: только те, что используются на этапе 4."""
+    """AI fields to analyze: only those used at stage 4."""
     fields = []
     if final_filter.get("hero") is not None:
         fields.append("hero")
@@ -68,7 +68,7 @@ def load_analysis_cache(cache_file: Path) -> dict:
         with open(cache_file, "r", encoding="utf-8") as f:
             return json.load(f)
     except (json.JSONDecodeError, OSError) as e:
-        print(f"Не удалось загрузить кэш ({cache_file}): {e}")
+        print(f"Failed to load cache ({cache_file}): {e}")
         return {}
 
 
@@ -152,7 +152,7 @@ def analyze_anime_with_ai(
         return {field: getattr(result, field) for field in fields}, True
 
     except Exception as e:
-        print(f"Ошибка при анализе '{title}': {e}")
+        print(f"Error analyzing '{title}': {e}")
         return {field: FIELD_DEFAULTS[field] for field in fields}, False
 
 
@@ -174,7 +174,7 @@ def process_anime_database(
     prompts_dir: str | Path = DEFAULT_PROMPTS_DIR,
 ) -> dict:
     if not fields:
-        print("\nВсе критерии этапа 4 отключены (None) — AI-анализ не требуется.")
+        print("\nAll stage 4 criteria disabled (None) — AI analysis not required.")
         return anime_data
 
     client = OpenAI(api_key=api_key)
@@ -187,12 +187,12 @@ def process_anime_database(
     api_count = 0
 
     print("\n" + "=" * 60)
-    print("AI-АНАЛИЗ ОПИСАНИЙ")
+    print("AI DESCRIPTION ANALYSIS")
     print("=" * 60)
-    print(f"Аниме для анализа: {total_anime}")
-    print(f"Поля для анализа: {', '.join(fields)}")
+    print(f"Anime to analyze: {total_anime}")
+    print(f"Fields to analyze: {', '.join(fields)}")
     if cache_path:
-        print(f"Кэш: {cache_path}")
+        print(f"Cache: {cache_path}")
     print()
 
     processed_count = 0
@@ -208,7 +208,7 @@ def process_anime_database(
         )
         if analysis:
             cached_count += 1
-            print("----из кэша")
+            print("  (from cache)")
             _apply_analysis(anime_info, analysis)
             _print_analysis(analysis)
             continue
@@ -229,9 +229,9 @@ def process_anime_database(
             save_analysis_cache(cache, cache_path)
             time.sleep(0.5)
         elif not success:
-            print("  ! ответ не сохранён в кэш из-за ошибки API")
+            print("  ! response not cached due to API error")
 
-    print(f"\nАнализ завершён: {total_anime} аниме")
+    print(f"\nAnalysis complete: {total_anime} anime")
     if cache_path:
-        print(f"Из кэша: {cached_count}, новых запросов к API: {api_count}")
+        print(f"From cache: {cached_count}, new API requests: {api_count}")
     return anime_data

@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Аналитика обработанной базы anime_database.json:
-- уникальные ключи в записях аниме
-- уникальные значения в полях Жанры и Темы
-- уникальные значения Тип, Первоисточник, Статус
-- паттерны названий (ключей): «Русское название / Английское название»
+Analytics for the processed anime_database.json:
+- unique keys in anime records
+- unique values in Жанры and Темы fields
+- unique values for Тип, Первоисточник, Статус
+- title key patterns: "Russian title / English title"
 """
 
 import json
@@ -33,7 +33,7 @@ MONTH_PATTERN = re.compile(
 
 
 def status_to_pattern(status: str) -> str:
-    """Преобразует статус в шаблон, заменяя даты на day, mounth, year."""
+    """Convert status string to a pattern, replacing dates with day, mounth, year."""
     result = status
 
     result = re.sub(r'\b\d{4}-\d{4}\b', 'year-year', result)
@@ -59,8 +59,8 @@ STANDARD_TITLE_PATTERN = 'RU / EN'
 
 def title_to_pattern(title: str) -> str:
     """
-    Классифицирует ключ (название аниме) по структурному паттерну.
-    Ожидаемый формат: «Русское название / Английское название».
+    Classify a title key by structural pattern.
+    Expected format: "Russian title / English title".
     """
     parts = [part.strip() for part in title.split(' / ')]
 
@@ -81,18 +81,18 @@ def _collect_title_patterns(titles: list[str]) -> dict[str, int]:
     for title in titles:
         pattern = title_to_pattern(title)
         if pattern == 'no separator':
-            print('title without separator:',title)
+            print('title without separator:', title)
         elif pattern == 'multiple_parts (3)':
-            print('title with multiple parts:',title)
+            print('title with multiple parts:', title)
         counts[pattern] = counts.get(pattern, 0) + 1
     return dict(sorted(counts.items(), key=lambda item: (-item[1], item[0])))
 
 
 def _split_tokens(value: str) -> list[str]:
     """
-    Разбивает строку на отдельные значения.
-    Формат данных: пары через пробел (EN RU EN RU ...),
-    например 'Shounen Сёнен Adventure Приключения'.
+    Split a string into individual values.
+    Data format: pairs separated by space (EN RU EN RU ...),
+    e.g. 'Shounen Сёнен Adventure Приключения'.
     """
     tokens = value.split()
     if not tokens:
@@ -171,11 +171,11 @@ def analyze_database_file(input_file, output_file):
     output_path = Path(output_file)
 
     if not input_path.exists():
-        print(f'Файл не найден: {input_path}')
+        print(f'File not found: {input_path}')
         return None
 
     print('=' * 70)
-    print('АНАЛИТИКА ОБРАБОТАННОЙ БАЗЫ')
+    print('PROCESSED DATABASE ANALYTICS')
     print('=' * 70)
 
     with open(input_path, 'r', encoding='utf-8') as f:
@@ -189,22 +189,22 @@ def analyze_database_file(input_file, output_file):
         json.dump(result, f, ensure_ascii=False, indent=2)
 
     stats = result['stats']
-    print(f"Всего аниме:              {stats['total_anime']}")
-    print(f"Уникальных первоисточников:{stats['total sources']}")
-    print(f"Уникальных жанров:        {stats['total genres']}")
-    print(f"Уникальных тем:           {stats['total themes']}")
-    print(f"Уникальных типов:         {stats['total types']}")
-    print(f"Уникальных ключей:        {len(result['field_keys'])}")
-    print(f"Уникальных паттернов:     {len(result['status_patterns'])}")
+    print(f"Total anime:               {stats['total_anime']}")
+    print(f"Unique sources:            {stats['total sources']}")
+    print(f"Unique genres:             {stats['total genres']}")
+    print(f"Unique themes:             {stats['total themes']}")
+    print(f"Unique types:              {stats['total types']}")
+    print(f"Unique field keys:         {len(result['field_keys'])}")
+    print(f"Unique status patterns:    {len(result['status_patterns'])}")
     print('-' * 70)
-    print('Паттерны названий (ключей):')
+    print('Title key patterns:')
     print(f"  {STANDARD_TITLE_PATTERN}: {stats['titles_ru_en_pattern']}")
-    print(f"  Другие форматы:         {stats['titles_other_patterns']}")
+    print(f"  Other formats:           {stats['titles_other_patterns']}")
     for pattern, count in result['title_patterns'].items():
         if pattern != STANDARD_TITLE_PATTERN:
             print(f"    {pattern}: {count}")
     print('=' * 70)
-    print(f'\nРезультат сохранён в {output_path}')
+    print(f'\nResult saved to {output_path}')
 
     return result
 

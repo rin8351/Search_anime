@@ -11,13 +11,13 @@ def filter_romantic_anime(
     required_themes=None,
 ):
     """
-    Фильтрует аниме по жанрам и темам. Возвращает отфильтрованный словарь.
+    Filter anime by genres and themes. Returns a filtered dictionary.
 
-    Логика:
-    - хотя бы один жанр из required_genres (если список не пуст)
-    - хотя бы одна тема из required_themes (если список не пуст)
-    - ни одного жанра из excluded_genres
-    - ни одной темы из excluded_themes
+    Logic:
+    - at least one genre from required_genres (if the list is not empty)
+    - at least one theme from required_themes (if the list is not empty)
+    - no genres from excluded_genres
+    - no themes from excluded_themes
     """
     excluded_genres = excluded_genres or []
     excluded_themes = excluded_themes or []
@@ -25,9 +25,9 @@ def filter_romantic_anime(
     required_themes = required_themes or []
 
     print("\n" + "=" * 60)
-    print("ФИЛЬТРАЦИЯ ПО ЖАНРАМ И ТЕМАМ")
+    print("GENRE & THEME FILTERING")
     print("=" * 60)
-    print(f"Всего аниме: {len(anime_data)}")
+    print(f"Total anime: {len(anime_data)}")
 
     filtered_data = {}
     stats = {
@@ -65,19 +65,18 @@ def filter_romantic_anime(
         filtered_data[title] = info
 
     print("\n" + "=" * 60)
-    print("СТАТИСТИКА ФИЛЬТРАЦИИ")
+    print("FILTERING STATISTICS")
     print("=" * 60)
-    print(f"Всего аниме в исходной базе:              {stats['total']}")
+    print(f"Total in source database:                 {stats['total']}")
     if required_genres:
-        print(f"Отфильтровано по обязательным жанрам:    {stats['filtered_by_required_genres']}")
+        print(f"Filtered by required genres:              {stats['filtered_by_required_genres']}")
     if required_themes:
-        print(f"Отфильтровано по обязательным темам:     {stats['filtered_by_required_themes']}")
+        print(f"Filtered by required themes:               {stats['filtered_by_required_themes']}")
     if excluded_genres:
-        print(f"Отфильтровано по исключаемым жанрам:     {stats['filtered_by_excluded_genres']}")
+        print(f"Filtered by excluded genres:               {stats['filtered_by_excluded_genres']}")
     if excluded_themes:
-        print(f"Отфильтровано по исключаемым темам:       {stats['filtered_by_excluded_themes']}")
-    print(f"Итоговое количество аниме:                {len(filtered_data)}")
+        print(f"Filtered by excluded themes:               {stats['filtered_by_excluded_themes']}")
+    print(f"Final count:                               {len(filtered_data)}")
     print("=" * 60)
 
     return filtered_data
-

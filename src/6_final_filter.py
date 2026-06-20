@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Финальная фильтрация аниме по результатам AI-анализа.
+Final anime filtering based on AI analysis results.
 """
 
 import json
@@ -10,8 +10,8 @@ from pathlib import Path
 
 def get_min_age(age_str):
     """
-    Извлекает минимальный возраст из строки.
-    Поддерживает форматы: "18", "18-25"
+    Extract minimum age from a string.
+    Supports formats: "18", "18-25"
     """
     if not age_str:
         return None
@@ -34,12 +34,12 @@ def filter_anime(
     min_age=18,
 ):
     """
-    Фильтрует аниме по критериям AI-анализа. Возвращает отфильтрованный словарь.
+    Filter anime by AI analysis criteria. Returns a filtered dictionary.
 
-    Любой параметр можно задать как None — тогда этот критерий не проверяется.
+    Any parameter can be set to None — that criterion is not checked.
     """
     print("\n" + "=" * 60)
-    print("ФИНАЛЬНАЯ ФИЛЬТРАЦИЯ")
+    print("FINAL FILTERING")
     print("=" * 60)
 
     filtered = {}
@@ -64,9 +64,9 @@ def filter_anime(
     filtered_count = len(filtered)
     pct = filtered_count / original_count * 100 if original_count else 0
 
-    print(f"Всего аниме: {original_count}")
-    print(f"После фильтрации: {filtered_count}")
-    print(f"Процент прошедших: {pct:.2f}%")
+    print(f"Total anime: {original_count}")
+    print(f"After filtering: {filtered_count}")
+    print(f"Pass rate: {pct:.2f}%")
     print("=" * 60)
 
     return filtered
@@ -78,7 +78,7 @@ if __name__ == "__main__":
     output_file = project_root / "data/results/final_anime.json"
 
     if not input_file.exists():
-        print(f"Файл не найден: {input_file}")
+        print(f"File not found: {input_file}")
     else:
         with open(input_file, 'r', encoding='utf-8') as f:
             anime_data = json.load(f)
@@ -86,4 +86,4 @@ if __name__ == "__main__":
         output_file.parent.mkdir(parents=True, exist_ok=True)
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(result, f, ensure_ascii=False, indent=2)
-        print(f"\nРезультат сохранён в {output_file}")
+        print(f"\nResult saved to {output_file}")

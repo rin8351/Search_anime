@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Скрипт базовой фильтрации аниме.
-Ожидает структурированную базу из 0_process_raw.py.
+Basic anime filtering script.
+Expects a structured database from 2_process_raw.py.
 """
 
 import json
@@ -22,7 +22,7 @@ def _load_analytic_options():
 
 
 def _validate_choice(value, valid_options, setting_name):
-    """None — фильтр отключён. Неверные значения выводят предупреждение и дают None."""
+    """None disables the filter. Invalid values print a warning and return None."""
     if value is None:
         return None
 
@@ -30,8 +30,8 @@ def _validate_choice(value, valid_options, setting_name):
         if value in valid_options:
             return {value}
         print(
-            f"Предупреждение: неверное значение «{value}» для «{setting_name}». "
-            f"Допустимые варианты см. в data/processed/analytic.json. Фильтр отключён."
+            f"Warning: invalid value '{value}' for '{setting_name}'. "
+            f"See valid options in data/processed/analytic.json. Filter disabled."
         )
         return None
 
@@ -42,18 +42,18 @@ def _validate_choice(value, valid_options, setting_name):
                 valid.append(item)
             else:
                 print(
-                    f"Предупреждение: неверное значение «{item}» для «{setting_name}». "
-                    f"Допустимые варианты см. в data/processed/analytic.json. "
-                    f"Это значение проигнорировано."
+                    f"Warning: invalid value '{item}' for '{setting_name}'. "
+                    f"See valid options in data/processed/analytic.json. "
+                    f"This value ignored."
                 )
         if not valid:
-            print(f"Предупреждение: для «{setting_name}» не осталось допустимых значений. Фильтр отключён.")
+            print(f"Warning: no valid values left for '{setting_name}'. Filter disabled.")
             return None
         return set(valid)
 
     print(
-        f"Предупреждение: для «{setting_name}» ожидается None, str или list[str]. "
-        f"Фильтр отключён."
+        f"Warning: '{setting_name}' expects None, str, or list[str]. "
+        f"Filter disabled."
     )
     return None
 
@@ -68,7 +68,7 @@ def _parse_episodes(value):
 
 
 def _validate_year(value, setting_name):
-    """None — фильтр отключён. Неверные значения выводят предупреждение и дают None."""
+    """None disables the filter. Invalid values print a warning and return None."""
     if value is None:
         return None
 
@@ -76,16 +76,16 @@ def _validate_year(value, setting_name):
         year = int(str(value).strip())
     except (ValueError, TypeError):
         print(
-            f"Предупреждение: неверное значение «{value}» для «{setting_name}». "
-            f"Ожидается целое число (год). Фильтр отключён."
+            f"Warning: invalid value '{value}' for '{setting_name}'. "
+            f"Expected an integer (year). Filter disabled."
         )
         return None
 
     current_year = date.today().year
     if year < MIN_VALID_YEAR or year > current_year:
         print(
-            f"Предупреждение: неверное значение «{year}» для «{setting_name}». "
-            f"Допустимый диапазон: {MIN_VALID_YEAR}–{current_year}. Фильтр отключён."
+            f"Warning: invalid value '{year}' for '{setting_name}'. "
+            f"Valid range: {MIN_VALID_YEAR}–{current_year}. Filter disabled."
         )
         return None
 
@@ -94,9 +94,9 @@ def _validate_year(value, setting_name):
 
 def _extract_air_year(status):
     """
-    Извлекает год выпуска из поля «Статус».
-    Поддерживает все паттерны из analytic.json → status_patterns.
-    Для диапазонов (например «в 2011-2014 гг.») берётся первый (минимальный) год.
+    Extract release year from the "Статус" field.
+    Supports all patterns from analytic.json → status_patterns.
+    For ranges (e.g. "в 2011-2014 гг.") the first (minimum) year is used.
     """
     if not status:
         return None
@@ -124,7 +124,7 @@ def _normalize_title(title):
 
 
 def is_watched(anime_name, watched_list):
-    """Проверяет, есть ли аниме в списке просмотренных."""
+    """Check whether the anime is in the watched list."""
     if not watched_list:
         return False
 
@@ -160,7 +160,7 @@ def is_watched(anime_name, watched_list):
 
 
 def _has_continuations(anime_data):
-    """True, если у аниме есть связанные Продолжения (поле «Продолжения» > 0)."""
+    """True if the anime has related continuations ("Продолжения" field > 0)."""
     count = anime_data.get('Продолжения', 0)
     try:
         return int(count) > 0
@@ -169,14 +169,14 @@ def _has_continuations(anime_data):
 
 
 def _validate_bool_filter(value, setting_name):
-    """None — фильтр отключён. Ожидается bool."""
+    """None disables the filter. Expects bool."""
     if value is None:
         return None
     if isinstance(value, bool):
         return value
     print(
-        f"Предупреждение: для «{setting_name}» ожидается None или bool. "
-        f"Фильтр отключён."
+        f"Warning: '{setting_name}' expects None or bool. "
+        f"Filter disabled."
     )
     return None
 
@@ -195,9 +195,7 @@ def filter_basic(
     max_year=None,
     watched_anime=None,
 ):
-    """
-    Базовая фильтрация аниме. Возвращает отфильтрованный словарь.
-    """
+    """Basic anime filtering. Returns a filtered dictionary."""
     valid_types, valid_sources = _load_analytic_options()
     allowed_types = _validate_choice(type_of_anime, valid_types, "type_of_anime")
     allowed_sources = _validate_choice(source_material, valid_sources, "source_material")
@@ -207,16 +205,16 @@ def filter_basic(
 
     if min_year is not None and max_year is not None and min_year > max_year:
         print(
-            f"Предупреждение: min_year ({min_year}) больше max_year ({max_year}). "
-            f"Фильтр по году отключён."
+            f"Warning: min_year ({min_year}) is greater than max_year ({max_year}). "
+            f"Year filter disabled."
         )
         min_year = None
         max_year = None
 
     print("=" * 70)
-    print("БАЗОВАЯ ФИЛЬТРАЦИЯ АНИМЕ")
+    print("BASIC ANIME FILTERING")
     print("=" * 70)
-    print(f"Всего аниме: {len(anime_dict)}")
+    print(f"Total anime: {len(anime_dict)}")
 
     filtered = {}
     stats = {
@@ -297,34 +295,34 @@ def filter_basic(
         filtered[anime_name] = dict(anime_data)
 
     print("\n" + "=" * 70)
-    print("СТАТИСТИКА ФИЛЬТРАЦИИ")
+    print("FILTERING STATISTICS")
     print("=" * 70)
-    print(f"Исходное количество:           {len(anime_dict)}")
+    print(f"Original count:                {len(anime_dict)}")
     if allowed_types is not None:
         types_label = ", ".join(sorted(allowed_types))
-        print(f"Исключено по типу ({types_label}): {stats['wrong_type']}")
+        print(f"Excluded by type ({types_label}): {stats['wrong_type']}")
     if allowed_sources is not None:
         sources_label = ", ".join(sorted(allowed_sources))
-        print(f"Исключено по первоисточнику ({sources_label}): {stats['wrong_source']}")
+        print(f"Excluded by source ({sources_label}): {stats['wrong_source']}")
     if watched_anime:
-        print(f"Исключено просмотренных:       {stats['watched']}")
+        print(f"Excluded (already watched):    {stats['watched']}")
     if has_continuations is not None:
-        label = "с продолжениями" if has_continuations else "без продолжений"
-        print(f"Исключено ({label}):           {stats['continuations']}")
+        label = "with continuations" if has_continuations else "without continuations"
+        print(f"Excluded ({label}):            {stats['continuations']}")
     if exclude_rating_g:
-        print(f"Исключено рейтинг G:           {stats['rating_g']}")
+        print(f"Excluded (G rating):           {stats['rating_g']}")
     if min_rating is not None:
-        print(f"Исключено низкий рейтинг:      {stats['low_score']}")
+        print(f"Excluded (low score):          {stats['low_score']}")
     if min_episodes is not None or max_episodes is not None:
-        print(f"Исключено по числу эпизодов:   {stats['episodes']}")
+        print(f"Excluded (episode count):      {stats['episodes']}")
     if min_year is not None or max_year is not None:
         year_range = []
         if min_year is not None:
-            year_range.append(f"от {min_year}")
+            year_range.append(f"from {min_year}")
         if max_year is not None:
-            year_range.append(f"до {max_year}")
-        print(f"Исключено по году ({', '.join(year_range)}): {stats['year']}")
-    print(f"Итого осталось:                {len(filtered)}")
+            year_range.append(f"to {max_year}")
+        print(f"Excluded (year {', '.join(year_range)}): {stats['year']}")
+    print(f"Remaining:                     {len(filtered)}")
     print("=" * 70)
 
     return filtered
@@ -335,8 +333,8 @@ if __name__ == '__main__':
     output_file = 'data/processed/filtered_anime.json'
 
     if not Path(input_file).exists():
-        print(f"Файл не найден: {input_file}")
-        print("Сначала запустите: python src/0_process_raw.py")
+        print(f"File not found: {input_file}")
+        print("Run first: python src/2_process_raw.py")
     else:
         with open(input_file, 'r', encoding='utf-8') as f:
             data = json.load(f)
@@ -345,4 +343,4 @@ if __name__ == '__main__':
         Path(output_file).parent.mkdir(parents=True, exist_ok=True)
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(result, f, ensure_ascii=False, indent=2)
-        print(f"\nРезультат сохранён в {output_file}")
+        print(f"\nResult saved to {output_file}")

@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Точка входа: запуск полного pipeline.
+Entry point: run the full pipeline.
 
-Все настройки — в config.py. Промежуточные JSON не создаются,
-сохраняется только итоговый результат.
+All settings are in config.py. Intermediate JSON files are not created;
+only the final result is saved.
 """
 
 import importlib.util
@@ -42,32 +42,32 @@ def _ask_yes_no(prompt: str) -> bool:
     no = {"нет", "н", "no", "n"}
 
     while True:
-        answer = input(f"{prompt} (Да/Нет): ").strip().lower()
+        answer = input(f"{prompt} (Yes/No): ").strip().lower()
         if answer in yes:
             return True
         if answer in no:
             return False
-        print("Введите Да или Нет.")
+        print("Please enter Yes or No.")
 
 
 def _should_run_ai_analysis(anime_count: int) -> bool:
     print("\n" + "=" * 60)
-    print(f"После фильтрации осталось аниме: {anime_count}")
+    print(f"Anime remaining after filtering: {anime_count}")
     print("=" * 60)
 
     if ASK_BEFORE_AI:
         if anime_count == 0:
-            print("Нечего анализировать — AI-запрос пропущен.")
+            print("Nothing to analyze — AI step skipped.")
             return False
-        return _ask_yes_no("Запустить AI-анализ описаний?")
+        return _ask_yes_no("Run AI description analysis?")
 
     if not RUN_AI_ANALYSIS:
-        print("AI-анализ отключён (ASK_BEFORE_AI = False).")
+        print("AI analysis disabled (RUN_AI_ANALYSIS = False).")
         return False
     if anime_count == 0:
-        print("Нечего анализировать — AI-запрос пропущен.")
+        print("Nothing to analyze — AI step skipped.")
         return False
-    print("AI-анализ включён (ASK_BEFORE_AI = False).")
+    print("AI analysis enabled (ASK_BEFORE_AI = False).")
     return True
 
 
@@ -82,15 +82,15 @@ def main():
     analyze_ai_mod = _load_module("analyze_ai", "5_analyze_with_ai.py")
     final_filter_mod = _load_module("final_filter", "6_final_filter.py")
 
-    print("Открытие обработанной базы...")
+    print("Loading processed database...")
     with open(PROCESSED_FILE, "r", encoding="utf-8") as f:
         anime_dict = json.load(f)
-    print(f"Всего аниме: {len(anime_dict)}\n")
+    print(f"Total anime: {len(anime_dict)}\n")
 
-    # Этап 1
+    # Stage 1
     data = filter_basic_mod.filter_basic(anime_dict, watched_anime=WATCHED_ANIME, **BASIC_FILTER)
 
-    # Этап 2
+    # Stage 2
     data = filter_romantic_mod.filter_romantic_anime(data, **Genre_FILTER)
 
     ai_fields = analyze_ai_mod.fields_from_final_filter(FINAL_FILTER)
@@ -98,8 +98,8 @@ def main():
     if ai_fields and _should_run_ai_analysis(len(data)):
         api_key = os.getenv("OPENAI_API_KEY")
         if not api_key:
-            print("API ключ не найден!")
-            print("Создайте файл .env и добавьте: OPENAI_API_KEY=your_api_key_here")
+            print("API key not found!")
+            print("Create a .env file and add: OPENAI_API_KEY=your_api_key_here")
             sys.exit(1)
 
         data = analyze_ai_mod.process_anime_database(
@@ -111,19 +111,19 @@ def main():
         )
         with open("data/processed/filtered_with_ai.json", "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
-        print(f"\nРезультат сохранён в data/processed/filtered_with_ai.json")
-        
+        print("\nResult saved to data/processed/filtered_with_ai.json")
+
         data = final_filter_mod.filter_anime(data, **FINAL_FILTER)
     elif not ai_fields:
-        print("\nВсе критерии этапа 4 отключены — этапы 3–4 пропущены.")
+        print("\nAll stage 4 criteria disabled — stages 3–4 skipped.")
     else:
-        print("\nЭтапы 3–4 пропущены. Сохраняем результат после жанровой фильтрации.")
+        print("\nStages 3–4 skipped. Saving result after genre filtering.")
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    print(f"\nГотово! Итоговый результат ({len(data)} аниме) сохранён в {output_path}")
+    print(f"\nDone! Final result ({len(data)} anime) saved to {output_path}")
 
 
 if __name__ == "__main__":

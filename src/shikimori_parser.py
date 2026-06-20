@@ -1,16 +1,17 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Парсер страниц аниме «Шикимори»
-Использование:
+Shikimori anime page parser.
+
+Usage:
 
 python shikimori_parser.py https://shikimori.one/animes/5680-k-on -o k_on.json
 
-Что извлекает:
-- Заголовок (из <header> <h1> или meta[itemprop="name"/"headline"])
-- Блок «Информация» (из div.c-about -> div.b-entry-info -> div.line-container)
-- Рейтинг (использует микроданные meta[itemprop="ratingValue"], затем видимую оценку рядом с «РЕЙТИНГ»)
-- Описание (из div.c-description > div.description-current ИЛИ div[itemprop="description"])
+Extracts:
+- Title (from <header> <h1> or meta[itemprop="name"/"headline"])
+- Info block (from div.c-about -> div.b-entry-info -> div.line-container)
+- Rating (meta[itemprop="ratingValue"], then visible score near "РЕЙТИНГ")
+- Description (from div.c-description > div.description-current OR div[itemprop="description"])
 """
 
 import argparse
@@ -33,17 +34,17 @@ HEADERS = {
 
 def fetch_html(url: str) -> str:
     """
-    Загружает HTML содержимое страницы по указанному URL.
+    Fetch HTML content from the given URL.
 
     Args:
-        url: Ссылка на страницу аниме на shikimori.one.
+        url: Link to an anime page on shikimori.one.
 
     Returns:
-        Строка с HTML-кодом страницы.
+        HTML string.
 
     Raises:
-        requests.HTTPError: В случае неуспешного HTTP-ответа.
-        requests.RequestException: При сетевых ошибках.
+        requests.HTTPError: On unsuccessful HTTP response.
+        requests.RequestException: On network errors.
     """
     resp = requests.get(url, headers=HEADERS, timeout=30)
     resp.raise_for_status()
@@ -52,15 +53,14 @@ def fetch_html(url: str) -> str:
 
 def clean_text(s: str) -> str:
     """
-    Очищает текст: нормализует пробелы, удаляет неразрывные пробелы.
+    Clean text: normalize whitespace, remove non-breaking spaces.
 
     Args:
-        s: Исходная строка.
+        s: Input string.
 
     Returns:
-        Очищенная строка.
+        Cleaned string.
     """
-    # normalize spaces, quotes and dashes
     s = s.replace('\xa0', ' ').strip()
     s = re.sub(r'\s+', ' ', s)
     return s
@@ -68,54 +68,45 @@ def clean_text(s: str) -> str:
 
 def extract_title(soup: BeautifulSoup) -> Optional[str]:
     """
-    Извлекает заголовок аниме со страницы.
+    Extract anime title from the page.
 
-    Пытается последовательно:
+    Tries in order:
     1) <header> h1
-    2) Микроразметка meta[itemprop="name"/"headline"]
+    2) Microdata meta[itemprop="name"/"headline"]
     3) <title>
 
     Args:
-        soup: Объект BeautifulSoup для HTML документа.
+        soup: BeautifulSoup object for the HTML document.
 
     Returns:
-        Строка с названием или None, если не найдено.
+        Title string or None if not found.
     """
-    # 1) header h1
     h = soup.select_one("header.head h1, header .head h1, header h1")
     if h:
-        # The <h1> on Shikimori often has quotes and separators inside spans
         t = clean_text(h.get_text(" ", strip=True))
-        # remove redundant quotes duplicates like: "Кэйон!" " K-On!"
         t = t.strip(' "\'')
         return t
 
-    # 2) microdata
     m = soup.select_one('meta[itemprop="name"], meta[itemprop="headline"]')
     if m and m.get("content"):
         return clean_text(m["content"])
 
-    # 3) <title>
     if soup.title and soup.title.string:
         return clean_text(soup.title.string.split(" / ")[0])
     return None
 
 
 def extract_info_block(soup: BeautifulSoup) -> Dict[str, str]:
-    """
-    Parse the left "Информация" block.
-    """
+    """Parse the left "Информация" (Info) block."""
     info: Dict[str, str] = {}
 
     containers = soup.select("div.c-about div.b-entry-info div.line-container")
     if not containers:
-        # fallback: sometimes without the outer classes
         containers = soup.select("div.b-entry-info div.line-container")
 
     for cont in containers:
         lines = cont.select("div.line")
         if not lines:
-            # sometimes <div class="line-container"><div class="line">Тип:</div><div class="value">TV Сериал</div></div>
             name = cont.select_one(".line, .name, .key")
             value = cont.select_one(".value, .val")
             if name and value:
@@ -125,7 +116,6 @@ def extract_info_block(soup: BeautifulSoup) -> Dict[str, str]:
                     info[k] = v
             continue
 
-        # happy path: first .line is key, the rest joined as value
         key = clean_text(lines[0].get_text(" ", strip=True).rstrip(":"))
         val = clean_text(" ".join([ln.get_text(" ", strip=True) for ln in lines[1:]]))
         if key:
@@ -135,18 +125,17 @@ def extract_info_block(soup: BeautifulSoup) -> Dict[str, str]:
 
 def extract_rating(soup: BeautifulSoup) -> Optional[str]:
     """
-    Извлекает числовой рейтинг аниме.
+    Extract numeric anime rating.
 
-    Сначала пытается взять из микроразметки ratingValue, затем ищет
-    видимое числовое значение в правом блоке страницы.
+    Tries microdata ratingValue first, then visible numeric value
+    in the right block of the page.
 
     Args:
-        soup: Объект BeautifulSoup для HTML документа.
+        soup: BeautifulSoup object for the HTML document.
 
     Returns:
-        Рейтинг в виде строки (например, "8.12") или None.
+        Rating as string (e.g. "8.12") or None.
     """
-    # Try microdata
     m = soup.select_one('meta[itemprop="ratingValue"]')
     if m and m.get("content"):
         return clean_text(m["content"])
@@ -167,20 +156,19 @@ def extract_rating(soup: BeautifulSoup) -> Optional[str]:
 
 def extract_description(soup: BeautifulSoup) -> Optional[str]:
     """
-    Извлекает описание аниме.
+    Extract anime description.
 
-    Пытается получить текст из блока текущего описания или из элемента
-    с itemprop="description". Текст нормализуется.
+    Tries the current description block or itemprop="description".
+    Text is normalized.
 
     Args:
-        soup: Объект BeautifulSoup для HTML документа.
+        soup: BeautifulSoup object for the HTML document.
 
     Returns:
-        Строка с описанием или None.
+        Description string or None.
     """
     node = soup.select_one("div.c-description div.description-current")
     if node:
-        # Description paragraphs may contain <br> and links to characters; keep text only
         desc = clean_text(node.get_text(" ", strip=True))
         if desc:
             return desc
@@ -196,15 +184,15 @@ def extract_description(soup: BeautifulSoup) -> Optional[str]:
 
 def parse(url: str) -> Dict[str, Any]:
     """
-    Парсит страницу аниме и возвращает структурированные данные.
+    Parse an anime page and return structured data.
 
     Args:
-        url: Ссылка на страницу аниме.
+        url: Link to the anime page.
 
     Returns:
-        Словарь формата:
+        Dictionary in the format:
         {
-          "<Название>": {
+          "<Title>": {
             "url": str,
             "info": Dict[str, str],
             "rating": Optional[str],
@@ -233,12 +221,12 @@ def parse(url: str) -> Dict[str, Any]:
 
 def main():
     """
-    Точка входа CLI: парсит указанную страницу аниме и выводит JSON.
+    CLI entry point: parse the given anime page and output JSON.
 
-    Аргументы:
-        url (позиционный): URL страницы аниме на shikimori.one
-        -o / --output: Путь для сохранения результата в файл
-        --ensure-ascii: Экранировать не-ASCII символы в JSON
+    Args:
+        url (positional): URL of anime page on shikimori.one
+        -o / --output: path to save result to file
+        --ensure-ascii: escape non-ASCII characters in JSON
     """
     ap = argparse.ArgumentParser(description="Parse a Shikimori anime page into JSON.")
     ap.add_argument("url", help="URL of the anime page on shikimori.one")
